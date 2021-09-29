@@ -19,7 +19,6 @@ header {
   background-color: lightgreen;
 }
 .menu-nav {
-  display: flex;
   list-style: none;
   padding-left: 0;
 }
@@ -29,10 +28,10 @@ header {
 }
 .visible {
   display: block;
-}
-
-.void {
-  height: 812px;
+  padding: 1em;
+  position: absolute;
+  background-color: rgb(150, 151, 151);
+  width: 50%;
 }
 
 footer {
