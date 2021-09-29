@@ -1,0 +1,17 @@
+/*----------------FOOTER STYLE----------------------*/
+
+#footer-end{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid;
+    
+}
+.listfooter{
+    text-align: center;
+   
+}
+
+ul{
+    list-style-type: none;
+}
