@@ -44,6 +44,22 @@ footer {
   body {
     background-color: lightblue;
   }
+
+  /*----------------ARTICLES STYLE----------------------*/
+
+  section-main {
+    background: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 8;
+  }
+
+  section-sidebar {
+    flex-basis: 10rem;
+    flex-grow: 2;
+    background-color: blue;
+  }
+
 /*----------------FOOTER STYLE----------------------*/
 
 #footer-end{
