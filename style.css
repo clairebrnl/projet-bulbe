@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+
+header {
+  padding: 0.5em;
+  background-color: lightgray;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navigation-menu {
+    display: none;
+}
+.logo {
+  width: 60px;
+  height: 20px;
+  background-color: lightgreen;
+}
+.menu-nav {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.hidden-menu {
+  display: none;
+  padding-left: 0;
+}
+.visible {
+  display: block;
+}
+
+.void {
+  height: 812px;
+}
+
+footer {
+  padding: 1em;
+  width: 100%;
+  background-color: lightgray;
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    background-color: lightblue;
+  }
+}
