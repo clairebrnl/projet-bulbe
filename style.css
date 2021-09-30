@@ -27,6 +27,47 @@ nav {
     display: none;
 }
  /* STYLE HEADER */
+ /*----------------SECTION STYLE--------------------*/
+
+ .techno{
+   background-color: yellow; 
+   height: 700px;
+   border-bottom: 1px solid blue;
+ }
+
+ .flex-article{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+ }
+
+ .lastest-column{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+ }
+
+ .new-article{
+    height: 500px;
+   width: 500px;
+   background-color: blue;
+  
+ }
+
+ .lastest-article1{
+    height: 200px;
+   width: 200px;
+   background-color: crimson;
+   
+ }
+
+ .lastest-article2{
+   
+  height: 200px;
+  width: 200px;
+  background-color: green;
+  flex-wrap: wrap-reverse;
+ }
 
 /*----------------FOOTER STYLE----------------------*/
 
