@@ -5,6 +5,8 @@ body {
   margin: 0;
   padding: 0;
   font-size: 18px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+    }
 }
 h1 {
   font-size: 2rem;
@@ -26,7 +28,8 @@ header {
   justify-content: center;
   align-content: center;
   color: rgb(131, 131, 131);
-  border-bottom: grey solid 5px;
+  border-bottom: grey solid 1px;
+  margin-bottom: 10px;
 }
 .nav-list {
   margin-bottom: 0.8em;
@@ -68,7 +71,7 @@ ul {
 }
 @media screen and (min-width: 376px) {
   body {
-    background-color: lightblue;
+    background-color: #ffffff;
   }
 
   header {
@@ -119,16 +122,30 @@ ul {
   width: 75px;
 }
 
-/*----------------ARTICLES STYLE----------------------*/
+/*----------------ARTICLE CONTENT STYLE----------------------*/
+
+@media screen and (max-width: 768px) {
+  .flex-container {
+ flex-direction: column;
+  }
+}
+
+img {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 aside, section {
   margin: 0;
-  padding: 1.25rem; 
   justify-content: space-between;
+  
 }
 
 .flex-container {
   display: flex;
+  
 }
 
 .wrapper {
@@ -139,40 +156,56 @@ aside, section {
 
 .content {
   flex: 0 0 60%;
-  background-color: #85bbe2;
+  background-color: #ffffff;
+  border: 1px solid black;
 }
 
 .sidebar {
   flex: 1 1 600px;
-  background-color: #f5b35d;
+  background-color: #ffffff;
+  border: 1px solid black;
 }
 
 #article {
-  background: red;
+  background-color: #ffffff;
 }
 
 .article-header {
   justify-content: space-around;
   padding: 5px;
-  background: yellow;
+  background-color: #ffffff;
 }
 
 .article-titre {
   font-size: 12px;
+  text-align: center;
 }
 
 #sidebar {
-  background: red;
+  background-color: #ffffff;
 }
 
 .sidebar-header {
   justify-content: space-around;
   padding: 5px;
-  background: yellow;
+  background-color: #ffffff;
 }
 
 .sidebar-titre {
   font-size: 12px;
+  text-align: center;
+}
+
+.content-text {
+  padding: 5px;
+  color: rgb(0, 0, 0);
+  text-align: justify;
+}
+
+.sidebar-text {
+  padding: 5px;
+  text-align: justify;
+  color: rgb(0, 0, 0);
 }
 
 /*----------------FOOTER STYLE----------------------*/
@@ -182,6 +215,7 @@ aside, section {
   justify-content: space-evenly;
   align-items: center;
   border-top: 1px solid;
+  margin-top: 10px;
 }
 .listfooter {
   text-align: center;
