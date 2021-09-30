@@ -237,3 +237,12 @@ h4 {
   text-align: center;
   margin: auto;
 }
+
+/* ----------------CONTACT STYLE-----------------------*/
+
+input[type="submit"] {
+  background: goldenrod;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+}
