@@ -46,18 +46,37 @@ footer {
   }
 
   /*----------------ARTICLES STYLE----------------------*/
-
-  section-main {
-    background: blueviolet;
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 8;
+ 
+aside, section {
+    margin: 0;
+    padding: 1.25rem;
+    justify-content: space-between;
   }
 
-  section-sidebar {
-    flex-basis: 10rem;
-    flex-grow: 2;
-    background-color: blue;
+.flex-container {
+  display: flex;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 75rem;
+  gap: 1%;
+  } 
+
+ .article-header {
+   justify-content: space-around;
+   padding: 5px;
+   background: yellow
+ } 
+  
+  .content {
+    flex: 1;
+    background-color: #85bbe2;
+  }
+  
+  .sidebar {
+    flex: 0 1 300px;
+    background-color: #f5b35d
   }
 
 /*----------------FOOTER STYLE----------------------*/
