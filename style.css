@@ -60,7 +60,9 @@ aside, section {
 .wrapper {
   margin: auto;
   max-width: 75rem;
-  gap: 1%;
+  gap: 10px;
+  -webkit-box-shadow: -1px 5px 6px 1px rgba(0,0,0,0.33); 
+  box-shadow: -1px 5px 6px 1px rgba(0,0,0,0.33);
   } 
 
  .article-header {
@@ -70,12 +72,12 @@ aside, section {
  } 
   
   .content {
-    flex: 1;
+    flex: 0 0 60%;
     background-color: #85bbe2;
   }
   
   .sidebar {
-    flex: 0 1 300px;
+    flex: 1 1 auto;
     background-color: #f5b35d
   }
 
