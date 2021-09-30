@@ -42,8 +42,14 @@ nav {
   color: rgb(255, 255, 255);
   font-weight: 700;
 }
-.hidden-menu {
+.sous-menu {
   display: none;
+}
+.sous-menu li {
+    padding: 0.5em 1em;
+}
+.active-sousMenu {
+    display: block;
 }
 
 main {
