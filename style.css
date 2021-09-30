@@ -1,57 +1,88 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
   font-size: 18px;
 }
 h1 {
-  margin-left: 10%;
   font-size: 2rem;
-}
-header {
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  width: 100%;
-  background-color: lightgrey;
-  /* padding: 0.5em; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0.5rem;
 }
 nav {
-  margin-right: 10%;
+  width: 70%;
+}
+header {
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  color: rgb(131, 131, 131);
+  border-bottom: grey solid 5px;
+}
+.nav-list {
+  margin-bottom: 0.8em;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-list li{
+  margin-top: 1em;
+  padding-bottom: 0.3em;
+  border-bottom: 2px rgb(131, 131, 131) solid;
+  font-size: 1.3rem;
+}
+.nav-list li > a {
+  color: rgb(131, 131, 131);
 }
 
-.nav-list {
-  display: none;
-}
-.active {
-  border-radius: 0.5em;
-  position: fixed;
-  left: 0;
-  right: 0;
-  display: block;
-  background-color: rgb(209, 209, 209);
-  box-shadow: #727272 1px 1px 5px;
-  transition-delay: 0.5s;
-}
-.active li {
-  padding: 1em 10%;
-}
-.active li a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-weight: 700;
-}
+
 .sous-menu {
   display: none;
 }
-.sous-menu li {
-  padding: 0.5em 1em;
+.accueil {
+  margin: auto;
 }
 .active-sousMenu {
-  display: block;
+  display: inline-block;
 }
+.active-sousMenu li {
+  display: inline-block;
+  font-size: 0.7rem;
+  margin: 0%;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.logo-img {
+  width: 75px;
+}
+@media screen and (min-width: 376px) {
+  body {
+    background-color: lightblue;
+  }
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10%;
+    align-items: center;
+  }
+  nav {
+    width: 50%
+  };
+  .nav-list li {
+    border: none;
+  }
+}
+
 
 /* STYLE HEADER */
 
@@ -84,11 +115,6 @@ ul {
 }
 .logo-img {
   width: 75px;
-}
-@media screen and (min-width: 376px) {
-  body {
-    background-color: lightblue;
-  }
 }
 
 /*----------------ARTICLES STYLE----------------------*/
