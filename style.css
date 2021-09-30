@@ -1,57 +1,103 @@
 body {
   margin: 0;
+  padding: 0;
+  font-size: 18px;
 }
-
+h1 {
+  margin-left: 10%;
+  font-size: 2rem;
+}
 header {
-  padding: 0.5em;
-  background-color: lightgray;
+  left: 0%;
+  top: 0%;
+  right: 0%;
   width: 100%;
+  background-color: lightgrey;
+  /* padding: 0.5em; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
-.navigation-menu {
-    display: none;
+nav {
+  margin-right: 10%;
 }
-.logo {
-  width: 60px;
-  height: 20px;
-  background-color: lightgreen;
-}
-.menu-nav {
-  list-style: none;
-  padding-left: 0;
-}
-.hidden-menu {
+
+.nav-list {
   display: none;
+}
+.active {
+  border-radius: 0.5em;
+  position: fixed;
+  left: 0;
+  right: 0;
+  display: block;
+  background-color: rgb(209, 209, 209);
+  box-shadow: #727272 1px 1px 5px;
+  transition-delay: 0.5s;
+}
+.active li {
+  padding: 1em 10%;
+}
+.active li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+.sous-menu {
+  display: none;
+}
+.sous-menu li {
+  padding: 0.5em 1em;
+}
+.active-sousMenu {
+  display: block;
+}
+
+/* STYLE HEADER */
+
+/*----------------FOOTER STYLE----------------------*/
+
+#footer-end {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid;
+  padding: 0.5em;
+  background: #ff5f6d;
+  background: -webkit-linear-gradient(to right, #ff5f6d, #ffc371);
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+}
+
+.listfooter {
+  text-align: center;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
   padding-left: 0;
 }
-.visible {
-  display: block;
-  padding: 1em;
-  position: absolute;
-  background-color: rgb(150, 151, 151);
-  width: 50%;
+.logo-img {
+  width: 75px;
 }
-
-footer {
-  padding: 1em;
-  width: 100%;
-  background-color: lightgray;
-}
-
 @media screen and (min-width: 376px) {
   body {
     background-color: lightblue;
   }
+}
 
-  /*----------------ARTICLES STYLE----------------------*/
- 
+/*----------------ARTICLES STYLE----------------------*/
+
 aside, section {
-    margin: 0;
-    padding: 1.25rem;
-    justify-content: space-between;
-  }
+  margin: 0;
+  padding: 1.25rem; 
+  justify-content: space-between;
+}
 
 .flex-container {
   display: flex;
@@ -61,40 +107,91 @@ aside, section {
   margin: auto;
   max-width: 75rem;
   gap: 10px;
-  -webkit-box-shadow: -1px 5px 6px 1px rgba(0,0,0,0.33); 
-  box-shadow: -1px 5px 6px 1px rgba(0,0,0,0.33);
-  } 
+}
 
- .article-header {
-   justify-content: space-around;
-   padding: 5px;
-   background: yellow
- } 
-  
-  .content {
-    flex: 0 0 60%;
-    background-color: #85bbe2;
-  }
-  
-  .sidebar {
-    flex: 1 1 auto;
-    background-color: #f5b35d
-  }
+.content {
+  flex: 0 0 60%;
+  background-color: #85bbe2;
+}
+
+.sidebar {
+  flex: 1 1 600px;
+  background-color: #f5b35d;
+}
+
+#article {
+  background: red;
+}
+
+.article-header {
+  justify-content: space-around;
+  padding: 5px;
+  background: yellow;
+}
+
+.article-titre {
+  font-size: 12px;
+}
+
+#sidebar {
+  background: red;
+}
+
+.sidebar-header {
+  justify-content: space-around;
+  padding: 5px;
+  background: yellow;
+}
+
+.sidebar-titre {
+  font-size: 12px;
+}
 
 /*----------------FOOTER STYLE----------------------*/
 
-#footer-end{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-top: 1px solid;
-    
+#footer-end {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid;
 }
-.listfooter{
-    text-align: center;
-   
+.listfooter {
+  text-align: center;
 }
 
-ul{
-    list-style-type: none;
+.li-center {
+  padding: 10px 10px;
 }
+
+#footer-end {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid;
+  padding: 0.5em;
+  background: #ff5f6d;
+  background: -webkit-linear-gradient(to right, #ff5f6d, #ffc371);
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+}
+
+.listfooter {
+  text-align: center;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.logo-img {
+  width: 75px;
+}
+@media screen and (min-width: 376px) {
+  body {
+    background-color: lightblue;
+  }
