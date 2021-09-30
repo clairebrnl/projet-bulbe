@@ -1,30 +1,59 @@
 body {
   margin: 0;
   padding: 0;
-
+  font-size: 18px;
 }
 h1 {
-    margin-left: 10%;
+  margin-left: 10%;
+  font-size: 2rem;
 }
 header {
-    background-color: lightgrey;
-    padding: 0.5em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: lightgrey;
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 nav {
-    margin-right: 10%;
-}
-.nav-list > li {
-    display: inline-block;
-    background-color: lightsalmon;
-    padding: 0.5em;
-    margin-right: 2em;
+  margin-right: 10%;
 }
 
-.hidden-menu {
-    display: none;
+.nav-list {
+  display: none;
+}
+.active {
+  border-radius: 0.5em;
+  position: fixed;
+  left: 0;
+  right: 0;
+  display: block;
+  background-color: rgb(209, 209, 209);
+  box-shadow: #727272 1px 1px 5px;
+  transition-delay: 0.5s;
+}
+.active li {
+  padding: 1em 10%;
+
+}
+.active li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+.sous-menu {
+  display: none;
+}
+.sous-menu li {
+    padding: 0.5em 1em;
+}
+.active-sousMenu {
+    display: block;
+}
+
+main {
+  height: 850px;
 }
  /* STYLE HEADER */
  /*----------------SECTION STYLE--------------------*/
@@ -70,45 +99,42 @@ nav {
 
 /*----------------FOOTER STYLE----------------------*/
 
-#footer-end{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-top: 1px solid;
-    padding: 0.5em;
-    background: #ff5f6d;
-    background: -webkit-linear-gradient(to right, #ff5f6d, #ffc371);
-    background: linear-gradient(to right, #ff5f6d, #ffc371);
-    
+#footer-end {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid;
+  padding: 0.5em;
+  background: #ff5f6d;
+  background: -webkit-linear-gradient(to right, #ff5f6d, #ffc371);
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
 }
 
-.listfooter{
-    text-align: center;
-    text-decoration: none;
-    padding-right: 10px;
+.listfooter {
+  text-align: center;
+  text-decoration: none;
+  padding-right: 10px;
 }
-   
-a{
+
+a {
   text-decoration: none;
 }
 
-
-ul{
-    list-style-type: none;
-    padding-left: 0;
+ul {
+  list-style-type: none;
+  padding-left: 0;
 }
 .logo-img {
-    width: 150px;
+  width: 75px;
 }
 @media screen and (min-width: 376px) {
-    body {
-      background-color: lightblue;
-  
-    }
+  body {
+    background-color: lightblue;
   }
+}
 
-.li-center{
-  padding : 10px 10px;
+.li-center {
+  padding: 10px 10px;
 }
 
  /*------------------------------STYLE CARD------------------------*/
