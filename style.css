@@ -229,7 +229,6 @@ ul {
 .usercom {
   display: flex;
   justify-content: flex-end;
-  border: 2px solid white;
   
 }
 
@@ -241,7 +240,7 @@ ul {
 .pseudocomexistant {
   margin-left: 40px;
   margin-right: 40px;
-  border: 5px solid lightsteelblue;
+  border: 2px solid black;
   border-radius: 26px;
   display: flex;
   justify-content: space-around;
@@ -253,7 +252,7 @@ section-commentaires {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 8;
-  border: 5px solid lightsteelblue;
+  border: 2px solid black;
   border-radius: 26px;
   margin-left: 40px;
   margin-right: 40px;
