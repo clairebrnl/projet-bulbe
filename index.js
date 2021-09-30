@@ -1,7 +1,7 @@
-const buttonToUnroll = document.querySelector('.menu-burger');
-const hiddenMenu = document.querySelector('.navigation-menu');
+const hidden = document.querySelector(".sous-menu");
+const activeHidden = document.querySelector(".deploy");
 
-buttonToUnroll.addEventListener('click', function() {
-    hiddenMenu.classList.toggle('visible');
-
+activeHidden.addEventListener("click", function () {
+  hidden.classList.toggle("active-sousMenu");
+  console.log('test');
 });
