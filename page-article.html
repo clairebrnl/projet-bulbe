@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="page-article.css" />
+    <title>PageArticle</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bulbe</h1>
+      <nav>
+        <button class="button-menu">Burger</button>
+        <ul class="nav-list">
+          <li><a href="#">Accueil</a></li>
+          <li>
+            <a href="#" class="deploy">Techno</a>
+            <ul class="sous-menu">
+              <li><a href="#">HTML/CSS</a></li>
+              <li><a href="#">JS</a></li>
+              <li><a href="#">Outils</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+        <div id="all-article">
+        <h2>Titre de l'article</h2>
+        <img class="img-article" src="Ressources/image-article.jpg" alt="ordinateur">
+            <div class="date-author">
+                <div class="article-date">Le 30 Semptembre 2021</div>
+                <div class="article-author">Billy LeChat</div>
+            </div>
+        <article class="text-article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit explicabo dolore esse voluptatibus laboriosam sed veniam qui voluptate. Accusantium dolores, impedit saepe nihil itaque harum ratione quis eligendi recusandae incidunt doloribus eum reiciendis molestiae cumque qui fuga repudiandae tempora sed voluptates pariatur minus! Nam ratione, consequatur facere dolore asperiores pariatur quam reprehenderit possimus quas error repellat veritatis aliquid illum voluptas voluptates, eligendi numquam accusantium nobis, minus officiis accusamus rem atque mollitia! Ut nemo optio ea voluptatum reiciendis laboriosam quidem vel modi dolor earum dolores, quaerat sed, architecto incidunt. Velit esse numquam obcaecati similique. Quis veritatis beatae delectus, sit voluptatum alias.</article>
+        <div class="comment"></div>
+        </div>
+    </section>
+
+    <h4>Laissez un commentaire</h4>
+<section-commentaires>   
+        <div class="laissezcom">
+            <div class="pseudologo"></div>
+                <div class="pseudoavatar"></div>
+                <h5 class="pseudocom">CLairedu3-1</h5>
+                <img class="" src="" alt="">
+                </div>
+                <textarea class="textcom" id="commentaire" placeholder="Ecrivez votre commentaire"></textarea>
+            </div>
+            <button class="envoicom" id="senCom" onclick="return addCom(evenement)" title="Envoyer">Envoyer</button>
+        </div>
+        </div>
+</section-commentaires>
+
+        <h4>Meilleurs commentaires</h4>
+          
+        <div class="laissezcom">
+            <div class="pseudocomexistant">
+                <h5 class= "pseudoavatar">Speculos62</h5>
+                    <img class="" src="" alt="">
+                </div>
+                <p class="usercom">Commentaire existant 1</p>
+            </div>
+        </div>
+
+        <div class="laissezcom">
+            <div class="pseudocomexistant">
+                <h5 class="pseudoavatar">BlackCoffee</div>
+                    <img class="" src="" alt="">
+                <p class="usercom">Commentaire existant 2</p>
+            </div>
+        </div>
+
+    <script src="index.js"></script>
+
+    <footer id="footer-end">
+      <div class="listfooter">
+        <ul>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">Cookies</a></li>
+          <li><a href="#">Partenaires</a></li>
+        </ul>
+      </div>
+      <div class="listfooter">
+        <ul>
+          <li><a href="#">Publicité</a></li>
+          <li><a href="#">A propos</a></li>
+          <li><a href="#">Contactez-nous</a></li>
+        </ul>
+      </div>
+      <div class="listfooter">
+        <ul>
+          <li><a href="#">Aide</a></li>
+          <li><a href="#">NewsLetter</a></li>
+          <li><a href="#">On ne recrute pas</a></li>
+        </ul>
+      </div>
+      <div class="titlefooter">
+        <img src="Ressources/Logo Bulbe.png" />
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
