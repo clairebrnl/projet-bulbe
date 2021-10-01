@@ -125,8 +125,9 @@ ul {
   list-style-type: none;
   padding-left: 0;
 }
-.logo-img {
+.imgcontent {
   width: 75px;
+  height: 75px;
 }
 
 /*----------------ARTICLE CONTENT STYLE----------------------*/
@@ -158,12 +159,12 @@ section {
   margin-bottom: 10px;
 }
 
-#flexlinkedin img {
-  flex-direction: row;
+#flexlinkedin: img {
   border-radius: 100%;
   width: 25px;
   height: 25px;
 }
+
 
 .content {
   flex: 0 0 60%;
@@ -189,6 +190,14 @@ section {
 .article-titre {
   font-size: 12px;
   text-align: right;
+}
+
+.articlecontent:hover {
+  background: gold;
+}
+
+.sidebarcontent:hover {
+  background: gold
 }
 
 .content-text {
