@@ -18,6 +18,7 @@ nav {
   width: 80%;
 }
 
+
 header {
   width: 100%;
   background: white;
@@ -53,6 +54,9 @@ header {
   body {
     background-color: #ffffff;
   }
+
+/*----------------HEADER STYLE----------------------*/
+
 
   header {
     flex-direction: row;
@@ -96,10 +100,6 @@ header {
   }
 }
 
-/* STYLE HEADER */
-
-
-
 /*----------------ARTICLE CONTENT STYLE----------------------*/
 
 @media screen and (max-width: 768px) {
@@ -129,12 +129,21 @@ section {
   margin-bottom: 10px;
 }
 
-#flexlinkedin img {
+.hero img {
   border-radius: 100%;
   width: 25px;
   height: 25px;
 }
 
+.imgcontent {
+  width: 100px;
+  height: 100px;
+}
+
+.imgheader {
+  width: 25px;
+  height: 25px;
+}
 
 .content {
   flex: 0 0 60%;
@@ -197,7 +206,6 @@ section {
 }
 
 /*----------------FOOTER STYLE----------------------*/
-
 #footer-end {
   display: flex;
   justify-content: space-evenly;
@@ -238,83 +246,10 @@ ul {
   align-items: center;
   border-top: 1px solid;
 }
-.listfooter  {
+.listfooter {
   text-align: center;
-  
-  
-}
-
-.listfooter ul li a {
-  color: #000000;
 }
 
 .li-center {
   padding: 10px 10px;
-}
-
-.logo-footer{
-  height: 100px;
-  width: 100px;
-}
-/* ----------------COMMENT STYLE-----------------------*/
-
-.laissezcom {
-  margin: auto;
-}
-
-.usercom {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.pseudoavatar {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.pseudocomexistant {
-  margin-left: 40px;
-  margin-right: 40px;
-  border: 2px solid black;
-  border-radius: 26px;
-  display: flex;
-  justify-content: space-around;
-}
-
-section-commentaires {
-  justify-content: center;
-  background: pink;
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 8;
-  border: 2px solid black;
-  border-radius: 26px;
-  margin-left: 40px;
-  margin-right: 40px;
-}
-
-h4 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: auto;
-}
-
-img {
-  width: 20px;
-  height: 20px;
-}
-
-/* ----------------CONTACT STYLE-----------------------*/
-
-input[type="submit"] {
-  background: goldenrod;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-}
-
-#contact {
-  display: flex;
-  justify-content: space-around;
 }
