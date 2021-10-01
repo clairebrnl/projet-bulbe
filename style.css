@@ -141,8 +141,8 @@ ul {
 aside,
 section {
   margin: 0;
-  justify-content: space-between;
-  
+  justify-content: space-around;
+  margin-right: 10px;
 }
 
 .flex-container {
@@ -161,9 +161,17 @@ section {
   margin-bottom: 10px;
 }
 
+#flexlinkedin img {
+  flex-direction: row;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+}
+
 .content {
   flex: 0 0 60%;
   background-color: #ffffff;
+  border-right: 2px solid #000000;
 }
 
 .sidebar {
