@@ -227,21 +227,6 @@ section {
   justify-content: space-evenly;
   align-items: center;
   border-top: 1px solid;
-  margin-top: 10px;
-}
-.listfooter {
-  text-align: center;
-}
-
-.li-center {
-  padding: 10px 10px;
-}
-
-#footer-end {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  border-top: 1px solid;
   padding: 0.5em;
   background: #ff5f6d;
   background: -webkit-linear-gradient(to right, #ff5f6d, #ffc371);
@@ -262,10 +247,28 @@ ul {
   list-style-type: none;
   padding-left: 0;
 }
-.titlefooter > img {
+.logo-img {
   width: 75px;
 }
+@media screen and (min-width: 376px) {
+  body {
+    background-color: white;
+  }
+}
 
+#footer-end {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid;
+}
+.listfooter {
+  text-align: center;
+}
+
+.li-center {
+  padding: 10px 10px;
+}
 /* ----------------COMMENT STYLE-----------------------*/
 
 .laissezcom {
