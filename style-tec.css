@@ -60,7 +60,7 @@
   
   @media screen and (min-width: 376px) {
     body {
-      background-color: lightblue;
+      background-color: #ffffff;
     }
     header {
       flex-direction: row;
@@ -164,6 +164,16 @@
   }
 
  /*--------------CARD STYLE-------------*/
+.tecLogo {
+  margin: 0 auto;
+  width: 160px;
+  margin-top: 40px;
+}
+
+ .tecLogo img {
+  width: 160px;
+}
+
  .cards {
   margin: auto;
   width: 100%;
@@ -180,7 +190,7 @@
   height: 335px;
   max-width: 42em;
   padding: 3rem;
-  background-color: grey;
+  background-color: whitesmoke;
   box-shadow: 0 1.4rem 8rem rgba(19, 1, 1, 0.733);
   display: flex;
   align-items: center;
@@ -204,12 +214,12 @@
 }
 
 .card:hover {
-  background-color: seagreen;
+  background-color: lightgrey;
 }
 
 .card-date span {
   display: inline-block;
-  color: rgba(24, 226, 101, 0.5);
+  color:grey;
   font-size: 1.2rem;
   font-weight: 600;
   margin: .5rem 0;
