@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 18px;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
     }
 
 h1 {
@@ -20,16 +20,17 @@ nav {
 
 header {
   width: 100%;
-  background-color: whitesmoke;
+  background: white;
   padding: 0.5em;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  color: rgb(131, 131, 131);
-  border-bottom: grey solid 1px;
+  color: rgb(0, 0, 0);
   margin-bottom: 10px;
+  box-shadow: 2px 2px 15px 0 #e5e5e5;
+
 }
 .nav-list {
   margin-bottom: 0.8em;
@@ -39,11 +40,11 @@ header {
 .nav-list li{
   margin-top: 1em;
   padding-bottom: 0.3em;
-  border-bottom: 2px rgb(131, 131, 131) solid;
+  border-bottom: 2px rgb(255, 255, 255) solid;
   font-size: 1.3rem;
 }
 .nav-list li > a {
-  color: rgb(131, 131, 131);
+  color: rgb(0, 0, 0);
 }
 
 
@@ -132,7 +133,8 @@ ul {
 
 img {
   width: 200px;
-  display: block;
+  height: 300px;
+  display: inline-block;
   margin-left: auto;
   margin-right: auto;
 }
@@ -154,16 +156,20 @@ aside, section {
   gap: 10px;
 }
 
+.hero {
+  padding: 0 10%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 .content {
   flex: 0 0 60%;
   background-color: #ffffff;
-  border: 1px solid black;
 }
 
 .sidebar {
   flex: 1 1 600px;
   background-color: #ffffff;
-  border: 1px solid black;
 }
 
 #article {
@@ -181,6 +187,11 @@ aside, section {
   text-align: center;
 }
 
+.content-text {
+  color: rgb(0, 0, 0);
+  padding-right: 20px;
+}
+
 #sidebar {
   background-color: #ffffff;
 }
@@ -194,12 +205,6 @@ aside, section {
 .sidebar-titre {
   font-size: 12px;
   text-align: center;
-}
-
-.content-text {
-  padding: 5px;
-  color: rgb(0, 0, 0);
-  text-align: justify;
 }
 
 .sidebar-text {
