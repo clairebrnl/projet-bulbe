@@ -265,6 +265,11 @@ h4 {
   margin: auto;
 }
 
+img {
+width: 20px;
+height: 20px;
+}
+
 /* ----------------CONTACT STYLE-----------------------*/
 
 input[type="submit"] {
@@ -272,4 +277,9 @@ input[type="submit"] {
   color: white;
   border: none;
   padding: 5px 10px;
+}
+
+#contact {
+  display: flex;
+  justify-content: space-around;
 }
