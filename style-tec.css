@@ -6,6 +6,10 @@
     padding: 0;
     font-size: 18px;
   }
+  .logo-header {
+    width: 125px;
+    height: 125px;
+  }
   h1 {
     font-size: 2rem;
     text-align: center;
@@ -124,9 +128,6 @@
     list-style-type: none;
     padding-left: 0;
   }
-  .logo-img {
-    width: 75px;
-  }
   
   /*----------------ARTICLES STYLE----------------------*/
   
@@ -174,7 +175,10 @@
     border-top: 1px solid;
   }
   .listfooter {
-    text-align: center;
+    text-align: left;
+  }
+  .listfooter a {
+    color: black;
   }
   
   .li-center {
@@ -272,4 +276,8 @@
       max-width: 100%;
       transform: translate(0, -1rem);
   }
+}
+.logo-footer{
+  height: 100px;
+  width: 100px;
 }
