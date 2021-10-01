@@ -127,50 +127,41 @@ ul {
     
   /* ----------------COMMENT STYLE-----------------------*/
 
-.laissezcom {
-    margin: auto;
-  }
-  
-  .usercom {
-    display: flex;
-    justify-content: flex-end;
-    border: 2px solid white;
-    
-  }
-  
-  .pseudoavatar{
-    display: flex;
-    justify-content: flex-start;
-  }
-  
-  .pseudocomexistant {
-    margin-left: 40px;
-    margin-right: 40px;
-    border: 5px solid lightsteelblue;
-    border-radius: 26px;
+  laissezcom{
+    background-color: lightslategrey;
+    text-align: center;
+    border: 2px solid black;
+    margin: 20px;
+    margin-left: 380px;
+    margin-right: 380px;
+    padding: 5px;
     display: flex;
     justify-content: space-around;
-  }
-  
-  section-commentaires {
-    justify-content: center;
-    background: pink;
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 8;
-    border: 5px solid lightsteelblue;
-    border-radius: 26px;
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-  
-  h4 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-  }
+}
 
+.pseudoavatar{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.usercom{
+    border: 2px solid black;
+    padding: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: white;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+h4{
+    text-align: center;
+    color: red;
+}
   /* ----------------CONTACT STYLE-----------------------*/
 
 input[type="submit"] {
