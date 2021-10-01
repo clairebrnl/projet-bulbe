@@ -35,15 +35,21 @@ header {
 .nav-list {
   display: flex;
   justify-content: space-between;
+  padding-left: 0;
+}
+.nav-list ul {
+  padding: 0;
 }
 .nav-list li {
   margin-top: 1em;
   padding-bottom: 0.3em;
   border-bottom: 2px rgb(255, 255, 255) solid;
   font-size: 1.3rem;
+  list-style: none;
 }
 .nav-list li > a {
   color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 
 .sous-menu {
@@ -54,10 +60,6 @@ header {
   body {
     background-color: #ffffff;
   }
-
-/*----------------HEADER STYLE----------------------*/
-
-
   header {
     flex-direction: row;
     justify-content: space-between;
@@ -100,6 +102,7 @@ header {
   }
 }
 
+/*----------------HEADER STYLE----------------------*/
 /*----------------ARTICLE CONTENT STYLE----------------------*/
 
 @media screen and (max-width: 768px) {
@@ -223,14 +226,6 @@ section {
   padding-right: 10px;
 }
 
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
 .logo-img {
   width: 75px;
 }
@@ -247,7 +242,7 @@ ul {
   border-top: 1px solid;
 }
 .listfooter {
-  text-align: center;
+  text-align: left;
 }
 
 .li-center {
