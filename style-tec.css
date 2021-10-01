@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-  }
+    font-family: 'Roboto', sans-serif;  }
   body {
     margin: 0;
     padding: 0;
@@ -167,7 +167,7 @@
 .tecLogo {
   margin: 0 auto;
   width: 160px;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
  .tecLogo img {
@@ -186,12 +186,13 @@
 .card{
   margin: 20px 20px;
   display: flex;
+
   width: 100%;
   height: 335px;
   max-width: 42em;
   padding: 3rem;
   background-color: whitesmoke;
-  box-shadow: 0 1.4rem 8rem rgba(19, 1, 1, 0.733);
+  box-shadow: 0 1.4rem 5rem rgba(0, 0, 0, 0.425);
   display: flex;
   align-items: center;
   border-radius: .8rem;
@@ -214,7 +215,8 @@
 }
 
 .card:hover {
-  background-color: lightgrey;
+  background-color: #808080
+  ;
 }
 
 .card-date span {
@@ -226,16 +228,16 @@
 }
 
 .card-title {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin: 1.5rem 0 2rem;
-  text-transform: uppercase;
   color: black;
 }
 
 .card-info {
   margin-bottom: 3rem;
   font-size: 1.2rem;
-  color: #aaa;
+  color: ##808080
+  ;
 }
 
 @media screen and (max-width: 868px) {
