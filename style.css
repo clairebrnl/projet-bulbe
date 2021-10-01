@@ -138,14 +138,6 @@ ul {
   }
 }
 
-img {
-  width: 200px;
-  height: 300px;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 aside,
 section {
   margin: 0;
@@ -191,7 +183,7 @@ section {
 
 .article-titre {
   font-size: 12px;
-  text-align: center;
+  text-align: right;
 }
 
 .content-text {
@@ -211,7 +203,7 @@ section {
 
 .sidebar-titre {
   font-size: 12px;
-  text-align: center;
+  text-align: right;
 }
 
 .sidebar-text {
