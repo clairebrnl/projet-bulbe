@@ -215,7 +215,10 @@
 }
 
 .card:hover {
-  background-color: #808080
+  background-color: #808080;
+  transform: scale(1.05);
+  transition: 0.2s;
+  cursor: pointer;
   ;
 }
 
