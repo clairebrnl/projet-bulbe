@@ -10,13 +10,19 @@ body {
   font-size: 18px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
 h1 {
   font-size: 2rem;
   text-align: center;
   margin-top: .5em;
 }
+
 nav {
   width: 80%;
+}
+
+a{
+  text-decoration: none;
 }
 
 header {
@@ -31,18 +37,22 @@ header {
   color: rgb(0, 0, 0);
   margin-bottom: 10px;
   box-shadow: 2px 2px 15px 0 #e5e5e5;
-
 }
+
 .nav-list {
   display: flex;
   justify-content: space-between;
+  list-style: none;
+  text-decoration: none;
 }
+
 .nav-list li{
   margin-top: 1em;
   padding-bottom: 0.3em;
   border-bottom: 2px rgb(255, 255, 255) solid;
   font-size: 1.3rem;
 }
+
 .nav-list li > a {
   color: rgb(0, 0, 0);
 }
@@ -62,22 +72,27 @@ header {
     padding: 0 10%;
     align-items: center;
   }
+
   nav {
     width: 35%;
   }
+
   .nav-list li {
     border: none;
   }
+
   .deploy > a::after {
     content: ">";
     font-size: 15px;
     display: inline-block;
     margin-left: 0.5em;
   }
+
   .deploy:hover > a::after {
     transform: rotate(90deg);
     transition: 0.5s;
   }
+
   .active-sousMenu {
     margin-top: 1em;
     position: absolute;
@@ -86,24 +101,34 @@ header {
     border-radius: 2px;
     box-shadow: 1px 1px 5px rgb(131, 131, 131);
     background-color: whitesmoke;
+    list-style: none;
   }
+
   .active-sousMenu li {
     padding: .5em;
   }
+
   .active-sousMenu li:hover {
     background-color: rgb(158, 158, 158);
   }
+
   .active-sousMenu li > a:hover {
     color: whitesmoke;
   }
 }
+
+.logo-header{
+  height: 100px;
+  width: 100px;
+}
+
 
   /*------------------------PAGE ARTICLE----------------------*/
 
  #all-article{
      text-align: center;
      width: 100%;
-     margin-top: 150px;
+     margin-top: 100px;
   }
    
 
@@ -128,11 +153,16 @@ header {
 
   .text-article{
       text-align: justify;
+      font-size: 1.1em;
+      font-weight: bolder;
+      line-height: 2em;
       margin-left: auto;
       margin-right: auto;
       margin-top: 20px;
       margin-bottom: 20px;
-      width: 35%;
+      padding: 20px;
+      width: 40%;
+      
       
   }
     
@@ -141,6 +171,10 @@ header {
   #comment-zone{
     text-align: center;
     margin-bottom: 20px;
+    border-top: 5px solid #296575;
+    margin-left: 50px;
+    margin-right: 50px;
+    
   }
 
   laissezcom{
@@ -162,19 +196,62 @@ header {
 }
 
 .usercom{
-  border: 7px outset rgba(54,62,245,0.6);
-  border-radius: 0px 40px 0px 40px;
-    padding: 30px;
-    background-color: #7CB9E8;
-    width: 35%;
-    margin: 0 auto;
+  border: 2px solid #296575;
+  border-radius: 7px;
+  box-shadow: 4px 4px 5px 0px rgba(231,131,0,0.25);
+  padding: 30px;
+  background-color: whitesmoke;
+  width: 35%;
+  margin: 0 auto;
 }
 
 .textcom{
-  border: 7px outset rgba(54,62,245,0.6);
-  border-radius: 0px 40px 0px 40px;
-  background-color: #7CB9E8;
+  border: 2px solid #296575;
+  border-radius: 7px;
+  box-shadow: 4px 4px 5px 0px rgba(231,131,0,0.25);
+  background-color: whitesmoke;
   
+}
+
+.envoiecom {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px 12px;
+  border: 1px solid #235563;
+  border-radius: 14px;
+  background: #42a0bb;
+  background: linear-gradient(to bottom, #42a0bb, #235563);
+  box-shadow: #4fc0e0 4px -3px 3px 0px;
+  text-shadow: #15323b 1px 1px 1px;
+  font: normal normal normal 20px verdana;
+  color: #ffffff;
+  text-decoration: none;
+}
+.envoiecom:hover,
+.envoiecom:focus {
+  border: 1px solid #296475;
+  background: #4fc0e0;
+  background: linear-gradient(to bottom, #4fc0e0, #2a6677);
+  color: #ffffff;
+  text-decoration: none;
+}
+.envoiecom:active {
+  background: #235563;
+  background: linear-gradient(to bottom, #235563, #235563);
+}
+.envoiecom:before{
+  content:  "\0000a0";
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  line-height: 24px;
+  margin: 0 4px -6px -4px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADDElEQVRIia3VX2jVZRgH8M97ttactGyUGJmcxIQSim4KpMSZKXmRNyJiRUctZPSHwIuohcMsI7oJQ3ZjnWOF7qIUCeqibGYhERXOMsusxpDIMLWtzTW283Zx3uXOds4m1Rd+vD/e5/t8v8/z/uENJkHMI7gdG7AY2RTqxiG8hs9CrrpGqCpeMAM7sAa9+AgnUng+lqARHXg05Jy/ZINY0IQDuBkv4JWQ0zuO04gn0Yrv0Bxyzk5pEPMygvdxJ1aGnA+rdZmMlmI/PhXdG9Ypjo1nKvS0CsuwaSpxSJxNWJZyq3cQC+ATXK1oQVhfXk3VLnbJiI7hjBF3hQ0XY7XlTE3p1Gy19Pli7C6ux4sp2kpmpwyKFeYPPrsHrWo0cXEvypcomIs6HFUszkE7vk3fDoqzq85zBHWiuWMlyzugPo0DmJXMdimd+07+Sa7DFqV7sThxB1KRoxoVDX5N42zibsJXyI+JfzzmvzONX+Ao1o7TwPglinoS4Z6QbRvC3WhBITEK4/5bStzNQ1iecnvGSk68BwWv4mHRTWGdbojdzy1OFTePqb45ZDcfTDlZHMfOkPN49Q5KeAmDgnwslK9nJSROHoMptwwTDELOKaXWF2FfLJhZVTxvJvYlbkvKLcP4TR416YgFDVFoD+LXjrx+0LwV1E4r8YcvcPK9jYIlUZgRxEf8rKOiVrXqYM+2RQ/Mn/7Lm7c2/qQmlF/qkZjR1XeDH/qve3DN04feqqZRsYNRvHN64W4x03bt5ed6ty9ofxnZPy678fofG1ev3dsVZ3z/m5Mx2l16Gipj0g5g1RPPdML9K1csDyE8hjac2v9BZ0Nf/0D329u3NU+WX+kUTcAV0xuyIYQvk/hWMd7258CFCRv6rw2m1dfPwTdYEKMOIeSvabpq4f9mcObsucOxGB/C6hAcwy0XBgd7psq7VIPeTCaTjeLoEm3pOn7ijr7+gWHKn9FKmPQUJewaHhm578Dhz2f9NTT0xvnevivxLubhqf9sEIaH9sbauo2nz/zeivVpugctocbeqfL/BhgGBj0E4MZbAAAAAElFTkSuQmCC") no-repeat left center transparent;
+  background-size: 100% 100%;
 }
 
 .avatar{
@@ -185,7 +262,12 @@ header {
 
 h4{
     text-align: center;
-    color: red;
+    margin-bottom: 0;
+    color: black;
+}
+
+h5{
+  margin-bottom: 10px;
 }
   /* ----------------CONTACT STYLE-----------------------*/
 
@@ -199,29 +281,39 @@ input[type="submit"] {
   /*----------------FOOTER STYLE----------------------*/
   
   #footer-end {
+    font-size: 1.1em;
+    font-weight: bold;
+    
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-top: 1px solid;
+    border-top: 1px solid #235563;
     padding: 0.5em;
-    background: #ff5f6d;
-    background: -webkit-linear-gradient(to right, #ff5f6d, #ffc371);
-    background: linear-gradient(to right, #ff5f6d, #ffc371);
+    background-color: white;
   }
   
   .listfooter {
-    text-align: center;
-    text-decoration: none;
-    padding-right: 10px;
+    text-align: left;
+    
   }
   
-  a {
-    text-decoration: none;
+  .listfooter a {
+  text-decoration: none;
+  
   }
   
-  ul {
+  .listfooter ul{
+    list-style: none;
+    
+  }
+  /*ul {
     list-style-type: none;
     padding-left: 0;
+  }*/
+  .listfooter ul li a{
+    
+    color: #235563;
+    text-align: left;
   }
   .logo-img {
     width: 75px;
@@ -232,17 +324,12 @@ input[type="submit"] {
     }
   }
   
-  #footer-end {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-top: 1px solid;
-  }
-  .listfooter {
-    text-align: center;
-  }
-  
   .li-center {
     padding: 10px 10px;
+  }
+  
+  .logo-footer{
+    height: 100px;
+    width: 100px;
   }
   

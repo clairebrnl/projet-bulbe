@@ -1,4 +1,5 @@
 /*-------------------------HEADER STYLE-------------------------*/
+/*-------------------------HEADER STYLE-------------------------*/
 * {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
@@ -10,13 +11,19 @@ body {
   font-size: 18px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
 h1 {
   font-size: 2rem;
   text-align: center;
   margin-top: .5em;
 }
+
 nav {
   width: 80%;
+}
+
+a{
+  text-decoration: none;
 }
 
 header {
@@ -31,20 +38,22 @@ header {
   color: rgb(0, 0, 0);
   margin-bottom: 10px;
   box-shadow: 2px 2px 15px 0 #e5e5e5;
-
 }
+
 .nav-list {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  
+  text-decoration: none;
 }
+
 .nav-list li{
   margin-top: 1em;
   padding-bottom: 0.3em;
   border-bottom: 2px rgb(255, 255, 255) solid;
   font-size: 1.3rem;
 }
+
 .nav-list li > a {
   color: rgb(0, 0, 0);
 }
@@ -64,23 +73,27 @@ header {
     padding: 0 10%;
     align-items: center;
   }
+
   nav {
     width: 35%;
   }
+
   .nav-list li {
     border: none;
-    
   }
+
   .deploy > a::after {
     content: ">";
     font-size: 15px;
     display: inline-block;
     margin-left: 0.5em;
   }
+
   .deploy:hover > a::after {
     transform: rotate(90deg);
     transition: 0.5s;
   }
+
   .active-sousMenu {
     margin-top: 1em;
     position: absolute;
@@ -90,14 +103,16 @@ header {
     box-shadow: 1px 1px 5px rgb(131, 131, 131);
     background-color: whitesmoke;
     list-style: none;
-    
   }
+
   .active-sousMenu li {
     padding: .5em;
   }
+
   .active-sousMenu li:hover {
     background-color: rgb(158, 158, 158);
   }
+
   .active-sousMenu li > a:hover {
     color: whitesmoke;
   }
@@ -221,9 +236,7 @@ section {
   align-items: center;
   border-top: 1px solid;
   padding: 0.5em;
-  background: #ff5f6d;
-  background: -webkit-linear-gradient(to right, #ff5f6d, #ffc371);
-  background: linear-gradient(to right, #ff5f6d, #ffc371);
+  background-color: white;
 }
 
 .listfooter {
@@ -238,15 +251,17 @@ text-decoration: none;
 .listfooter ul{
   list-style: none;
 }
+
 /*ul {
   list-style-type: none;
   padding-left: 0;
 }*/
+
 .listfooter ul li a{
-  
   color: #000000;
   text-align: left;
 }
+
 .logo-img {
   width: 75px;
 }
