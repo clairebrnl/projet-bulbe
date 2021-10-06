@@ -257,3 +257,109 @@ text-decoration: none;
   height: 100px;
   width: 100px;
 }
+
+/*--------------CARD STYLE-------------*/
+.tecLogo {
+  margin: 0 auto;
+  width: 160px;
+  margin-top: 30px;
+  }
+  
+  .tecLogo img {
+  width: 160px;
+  }
+  
+  .cards {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  }
+  
+  .card{
+  margin: 20px 20px;
+  display: flex;
+  
+  width: 100%;
+  height: 335px;
+  max-width: 42em;
+  padding: 3rem;
+  background-color: whitesmoke;
+  box-shadow: 0 1.4rem 5rem rgba(0, 0, 0, 0.425);
+  display: flex;
+  align-items: center;
+  border-radius: .8rem;
+  }
+  
+  .card-date {
+  display: flex;
+  justify-content: space-between;
+  }
+  
+  .card-img{
+  min-width: 12.5rem;
+  max-width: 12.5rem;
+  height: 12.5rem;
+  transform: translateX(-2rem);
+  position: relative;
+  }
+  
+  .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: .8rem;
+  }
+  
+  .card:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+  cursor: pointer;
+  ;
+  }
+  
+  .card-date span {
+  display: inline-block;
+  color:grey;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: .5rem 0;
+  }
+  
+  .card-title {
+  font-size: 2.2rem;
+  margin: 1.5rem 0 2rem;
+  color: black;
+  }
+  
+  .card-info {
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  color: #808080
+  ;
+  }
+  
+  
+  @media screen and (max-width: 868px) {
+    .card {
+        padding: 2.5rem;
+        width: 100%;
+        flex-direction: column;
+        height: 550px;
+    }
+  
+    .card-info {
+      font-size: smaller;
+    }
+  
+    .card-img {
+        height: max-content;
+        transform: translate(0, -1rem);
+    }
+  .logo-footer{
+  height: 100px;
+  width: 100px;
+  }
