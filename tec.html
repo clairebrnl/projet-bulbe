@@ -11,6 +11,31 @@
     <title>Document</title>
   </head>
   <body>
+    <header>
+      <img class ="logo-header" src="Ressources/logo bulb.png">
+      <nav>
+        <ul class="nav-items">
+          <li class="nav-items-list" ><a href="index.html">Accueil</a></li>
+
+          <li class="nav-items-list deploy" >
+            <a  class="active-subnav" href="#">Techno</a>
+
+            <ul class="subnav">
+              <li class="subnav-items-list"><a href="#">HTML/CSS</a></li>
+              <li class="subnav-items-list"><a href="tec.html">JS</a></li>
+              <li class="subnav-items-list"><a href="#">PHP</a></li>
+              <li class="subnav-items-list"><a href="#">Outils</a></li>
+            </ul>
+
+          </li>
+          
+          <li class="nav-items-list"><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="burger">
+          <span class="line"></span>
+        </div>
+      </nav>
+    </header>
 
     <div class="tecLogo">
       <h2 class="tecTitle">JAVASCRIPT</h2>
@@ -19,6 +44,7 @@
   
   <main class="cards">
       
+
         <div class="card">
           <div class="card-img">
               <img src="https://www.elao.com/resized/images/posts/thumbnails/vuejs.jpg/d72dc29c41c0ca57d17accbeda569def.jpg" alt="">
@@ -180,32 +206,46 @@
       </main>
 
 
-    <footer id="footer-end">
-      <div class="listfooter">
-        <ul>
-          <li><a href="#">Mentions légales</a></li>
-          <li><a href="#">Cookies</a></li>
-          <li><a href="#">Partenaires</a></li>
-        </ul>
-      </div>
-      <div class="listfooter">
-        <ul>
-          <li><a href="#">Publicité</a></li>
-          <li><a href="#">A propos</a></li>
-          <li><a href="#">Contactez-nous</a></li>
-        </ul>
-      </div>
-      <div class="listfooter">
-        <ul>
-          <li><a href="#">Aide</a></li>
-          <li><a href="#">NewsLetter</a></li>
-          <li><a href="#">On ne recrute pas</a></li>
-        </ul>
-      </div>
-      <div class="titlefooter">
-        <img class="logo-footer" src="Ressources/Logo Bulbe.png" />
-      </div>
-    </footer>
+    <!-- footer -->
+  <footer id="footer-end">
+    <div class="listfooter">
+      <h3>Mentions légales</h3>
+      <ul class="footer-end-ul">
+        <li class ="middle-list"><a href="#">Cookies</a></li>
+        <li><a href="#">Partenaires</a></li>
+      </ul>
+    </div>
+    <div class="listfooter">
+      <h3>Publicité</h3>
+      <ul class="footer-end-ul">
+        <li class ="middle-list"><a href="#">A propos</a></li>
+        <li><a href="contact.html">Contactez-nous</a></li>
+      </ul>
+    </div>
+    <div class="listfooter">
+      <h3>Aide</h3>
+      <ul class="footer-end-ul">
+        <li class ="middle-list"><a href="#">NewsLetter</a></li>
+        <li><a href="#">On ne recrute pas</a></li>
+      </ul>
+    </div>
+      <div class="container_logo_linkedin">
+        <div class="top">
+          <span class="round_linkedin"><a href="https://www.linkedin.com/in/cyril-cabrolier/"target="_blank"><img class ="round_linkedin1" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
+        </div>
+        <div class="middle">
+          <span class="round_linkedin"><a href="https://www.linkedin.com/in/laurie-pujos-02b8a6135/"target="_blank"><img class ="round_linkedin2" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
+          <span class="round_linkedin"><a href="https://www.linkedin.com/in/claire-brunel-087879211/"target="_blank"><img class ="round_linkedin3" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
+        </div>
+        <div class="bottom">
+          <span class="round_linkedin"><a href="https://www.linkedin.com/in/yohann-mahrez-6083a1221/"target="_blank"><img class ="round_linkedin4" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
+          <span class="round_linkedin"><a href="https://www.linkedin.com/in/leo-planelles-ab57b81b8/"target="_blank"><img class ="round_linkedin5" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
+        </div>
+    </div>
+    <div class="titlefooter">
+      <img class="logo-footer" src="Ressources/logo bulb.png" />
+    </div>
+  </footer>
 
     <script src="index.js"></script>
   </body>

@@ -10,49 +10,57 @@
     <title>Contact</title>
 </head>
 <body>
-    <header>
-      <img class ="logo-header" src="Ressources/logo bulb.png">
-        <nav>
-          <ul class="nav-list">
-            <li><a href="index.html" class="accueil">Accueil</a></li>
-            <li class="deploy">
-              <a href="#">Techno</a>
-              <ul class="sous-menu">
-                <li><a href="tec.html">HTML/CSS</a></li>
-                <li><a href="tec.html">JS</a></li>
-                <li><a href="tec.html">Outils</a></li>
-              </ul>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
+  <header>
+    <img class ="logo-header" src="Ressources/logo bulb.png">
+    <nav>
+      <ul class="nav-items">
+        <li class="nav-items-list" ><a href="index.html">Accueil</a></li>
+
+        <li class="nav-items-list deploy" >
+          <a  class="active-subnav" href="#">Techno</a>
+
+          <ul class="subnav">
+            <li class="subnav-items-list"><a href="#">HTML/CSS</a></li>
+            <li class="subnav-items-list"><a href="tec.html">JS</a></li>
+            <li class="subnav-items-list"><a href="#">PHP</a></li>
+            <li class="subnav-items-list"><a href="#">Outils</a></li>
           </ul>
-        </nav>
-      </header>
+
+        </li>
+        
+        <li class="nav-items-list"><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <span class="line"></span>
+      </div>
+    </nav>
+  </header>
 
 
-    <section id="Contact">
+    <section id="contact">
         <p>
           Contactez nous !
         </p>
         <form id="contactForm">
-          <label for="name">Nom:</label><br />
+          <label for="name">Votre nom</label><br />
           <input
             type="text"
             id="name"
             name="name"
             value="Entrez votre nom"
           /><br />
-          <label for="email">Email:</label><br />
+          <label for="email">Votre email</label><br />
           <input
             type="email"
             id="email"
             name="email"
             value="exemple@gmail.com"
           /><br />
-          <label for="message">Message:</label><br />
+          <label for="message">Votre message</label><br />
           <textarea id="message" name="message"></textarea>
           <br /><br />
   
-          <input type="submit" value="Submit" />
+          <input id="button" type="submit" value="Envoyer" />
         </form>
       </section>
 
