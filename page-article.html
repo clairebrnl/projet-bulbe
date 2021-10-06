@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="page-article.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
@@ -15,20 +15,28 @@
   <body>
     <!-----------------------Header------------------------------------------------->
     <header>
-      <img class="logo-header" src="Ressources/logo bulb.png" />
+      <img class ="logo-header" src="Ressources/logo bulb.png">
       <nav>
-        <ul class="nav-list">
-          <li><a href="index.html" class="accueil">Accueil</a></li>
-          <li class="deploy">
-            <a href="#">Techno</a>
-            <ul class="sous-menu">
-              <li><a href="tec.html">HTML/CSS</a></li>
-              <li><a href="tec.html">JS</a></li>
-              <li><a href="tec.html">Outils</a></li>
+        <ul class="nav-items">
+          <li class="nav-items-list" ><a href="index.html">Accueil</a></li>
+
+          <li class="nav-items-list deploy" >
+            <a  class="active-subnav" href="#">Techno</a>
+
+            <ul class="subnav">
+              <li class="subnav-items-list"><a href="#">HTML/CSS</a></li>
+              <li class="subnav-items-list"><a href="tec.html">JS</a></li>
+              <li class="subnav-items-list"><a href="#">PHP</a></li>
+              <li class="subnav-items-list"><a href="#">Outils</a></li>
             </ul>
+
           </li>
-          <li><a href="contact.html">Contact</a></li>
+          
+          <li class="nav-items-list"><a href="contact.html">Contact</a></li>
         </ul>
+        <div class="burger">
+          <span class="line"></span>
+        </div>
       </nav>
     </header>
 <!----------------------------Section article---------------------------------------------->
