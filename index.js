@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 //modification du dom pour la verison desktop
 const hidden = document.querySelector(".sous-menu");
 const activeHidden = document.querySelector(".deploy");
@@ -8,9 +8,6 @@ activeHidden.addEventListener("mouseover", function () {
 hidden.addEventListener("mouseover", function() {
   hidden.classList.toggle("active-sousMenu");
 })
-=======
-
-
 
 //---------------Button newsletter-------- en cours-------//
 
@@ -40,7 +37,13 @@ function closeAlertPopup() {
 }
 
 
->>>>>>> a132269feb351866a263962884019849ebd61f34
+//---------------Button contact---------------//
+const message = "Merci pour votre retour ! ";
 
-
-
+var el = document.getElementById("contactForm");
+if (el != null) {
+  el.addEventListener("submit", function (event) {
+    event.preventDefault();
+    alert(message);
+  });
+}
