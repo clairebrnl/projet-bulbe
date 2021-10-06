@@ -7,6 +7,6 @@ activeHidden.addEventListener("mouseover", function () {
 hidden.addEventListener("mouseover", function() {
   hidden.classList.toggle("active-sousMenu");
 })
-hidden.classList.toggle("active-sousMenu");
+
 
 

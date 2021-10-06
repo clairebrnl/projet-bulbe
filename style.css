@@ -1,3 +1,10 @@
+:root{
+  --headerFooter-Color: #6F9EAB;
+  --page-Color: white;
+  --lien-Color: #E95501; 
+}
+
+
 /*-------------------------HEADER STYLE-------------------------*/
 * {
   box-sizing: border-box;
@@ -257,4 +264,44 @@ text-decoration: none;
 .logo-footer{
   height: 100px;
   width: 100px;
+}
+
+/*----------------CONTACT STYLE----------------------*/
+@media screen and (max-width: 768px) { 
+  #contact { 
+    display: flex; 
+    flex-direction: column;
+  } 
+}
+
+#contact{
+  height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body, html{
+height: 100%;
+}
+
+form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  font-size: 22px;
+}
+
+#button{
+  border-radius: 1px;
+  border: 1px solid;
+  padding: 10px;
+  letter-spacing: 2px;
+  background-color: whitesmoke;
+  align-self: flex-end;
+  margin-top: 20px;
+  margin-right: 10%;
+  margin-bottom: 20px;
 }
