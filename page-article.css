@@ -1,4 +1,49 @@
+/*--------RESET CSS-------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 /*-------------------------HEADER STYLE-------------------------*/
+
 * {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
@@ -9,6 +54,7 @@ body {
   padding: 0;
   font-size: 18px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  
 }
 
 h1 {
@@ -115,6 +161,7 @@ header {
   .active-sousMenu li > a:hover {
     color: whitesmoke;
   }
+  
 }
 
 .logo-header{
@@ -129,12 +176,24 @@ header {
      text-align: center;
      width: 100%;
      margin-top: 100px;
+     
+  }
+
+  h2{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom : 20px;
   }
    
 
   .img-techno{
     width: 4%;
+    margin-bottom : 20px;
 
+  }
+
+  .img-article{
+    width: 75%;
   }
 
   .date-author{
@@ -171,13 +230,13 @@ header {
   #comment-zone{
     text-align: center;
     margin-bottom: 20px;
-    border-top: 5px solid #296575;
+    border-top: 5px solid #6F9EAB;
     margin-left: 50px;
     margin-right: 50px;
     
   }
 
-  laissezcom{
+  /*laissezcom{
     background-color: lightslategrey;
     text-align: center;
     border: 2px solid black;
@@ -187,7 +246,7 @@ header {
     padding: 5px;
     display: flex;
     justify-content: space-around;
-}
+}*/
 
 .pseudoavatar{
     text-align: center;
@@ -264,11 +323,16 @@ header {
 
 h4{
     text-align: center;
-    margin-bottom: 0;
-    color: black;
+    margin: 10px 10px;
+    color: #E95501;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+    text-decoration-color: #E95501;
 }
 
 h5{
+  font-weight: bold;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
   /* ----------------CONTACT STYLE-----------------------*/
@@ -285,53 +349,212 @@ input[type="submit"] {
   #footer-end {
     font-size: 1.1em;
     font-weight: bold;
-    
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    border-top: 1px solid ;
     padding: 0.5em;
-    background-color: white;
-  }
-  
-  .listfooter {
+    background-color: #6F9EAB;
+}
+
+.listfooter h3 {
+  text-align: center;
+}
+
+.footer-end-ul {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listfooter {
     text-align: left;
-    
-  }
-  
+    margin-top: 25px;
+}
+
   .listfooter a {
-  text-decoration: none;
-  
+    text-decoration: none;
   }
-  
+
   .listfooter ul{
     list-style: none;
-    
   }
-  /*ul {
+
+  ul {
     list-style-type: none;
-    padding-left: 0;
-  }*/
+  }
+
   .listfooter ul li a{
-    
-    color: #235563;
+    color: white;
     text-align: left;
   }
+
   .logo-img {
     width: 75px;
   }
+
+  .middle-list{
+    margin-bottom: 5px;
+  }
+
+  /*.circle-container {
+    position: relative;
+    width: 1em;
+    height: 1em;
+    padding: 2.8em;
+    border-radius: 50%;
+    margin: 2em ;
+}
+.circle-container a {
+    display: block;
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 2em; height: 2em;
+    margin: 0 auto;
+
+}
+.circle-container img { display: block; width: 25%; }
+.deg0 { transform: translate(12em); } 
+.deg45 { transform: rotate(45deg) translate(2em) rotate(-45deg); }
+.deg135 { transform: rotate(135deg) translate(2em) rotate(-135deg); }
+.deg180 { transform: translate(-2em); }
+.deg225 { transform: rotate(225deg) translate(2em) rotate(-225deg); }
+.deg315 { transform: rotate(315deg) translate(2em) rotate(-315deg); }*/
+
+  #footin{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+  }
+
   @media screen and (min-width: 376px) {
     body {
       background-color: white;
     }
+    .text-article{
+      text-align: center;
+      font-size: 1.1em;
+      font-weight: bolder;
+      line-height: 2em;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 20px;
+      width: 75%;
+      
   }
-  
+
+  .usercom{
+  border: 2px solid #296575;
+  border-radius: 7px;
+  box-shadow: 4px 4px 5px 0px rgba(231,131,0,0.25);
+  padding: 30px;
+  background-color: whitesmoke;
+  width: 75%;
+  margin: 0 auto;
+}
+
+  }
+
   .li-center {
     padding: 10px 10px;
   }
-  
+
   .logo-footer{
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
+    margin-top: 25px;
   }
+
+.round_linkedin {
+    background: gray;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.round_linkedin1 {
+  background: gray;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.round_linkedin2 {
+  background: gray;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.round_linkedin3 {
+  background: gray;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.round_linkedin4 {
+  background: gray;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.round_linkedin5 {
+  background: gray;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.container_logo_linkedin {
+    width: 100px;
+    height: 95px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}   
+
+.container_logo_linkedin .top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.container_logo_linkedin .middle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.container_logo_linkedin .bottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width: 639px) {
+    #footer-end {
+        flex-direction: initial;
+        justify-content: space-evenly;
+    }
+
+    .footer-end-ul {
+      margin-top: 10px;
+      display: block;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .listfooter h3 {
+    text-align: left;
+  }
+
+  .container_logo_linkedin {
+    margin-top: 0;
+  }  
+}
+  
   

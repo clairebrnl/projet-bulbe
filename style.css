@@ -265,11 +265,11 @@ text-decoration: none;
 .logo-img {
   width: 75px;
 }
-@media screen and (min-width: 376px) {
+/*@media screen and (min-width: 376px) {
   body {
     background-color: white;
   }
-}
+}*/
 
 .li-center {
   padding: 10px 10px;
@@ -278,4 +278,10 @@ text-decoration: none;
 .logo-footer{
   height: 100px;
   width: 100px;
+}
+
+@media screen and (min-width :376px){
+  .header{
+
+  }
 }
