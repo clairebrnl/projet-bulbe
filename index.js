@@ -1,6 +1,3 @@
-
-
-
 //---------------Button newsletter-------- en cours-------//
 
 const btnPopup = document.getElementById('btnPopup');
