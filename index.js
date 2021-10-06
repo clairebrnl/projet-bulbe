@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //modification du dom pour la verison desktop
 const hidden = document.querySelector(".sous-menu");
 const activeHidden = document.querySelector(".deploy");
@@ -8,7 +7,6 @@ activeHidden.addEventListener("mouseover", function () {
 hidden.addEventListener("mouseover", function() {
   hidden.classList.toggle("active-sousMenu");
 })
-=======
 
 
 
@@ -40,7 +38,6 @@ function closeAlertPopup() {
 }
 
 
->>>>>>> a132269feb351866a263962884019849ebd61f34
 
 
 
