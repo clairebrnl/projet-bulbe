@@ -40,6 +40,8 @@ function closeAlertPopup() {
 //---------------Button contact---------------//
 const message = "Merci pour votre retour ! ";
 
+
+
 var el = document.getElementById("contactForm");
 if (el != null) {
   el.addEventListener("submit", function (event) {
