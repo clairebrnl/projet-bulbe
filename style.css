@@ -1,18 +1,6 @@
-<<<<<<< HEAD
-:root{
-  --headerFooter-Color: #6F9EAB;
-  --page-Color: white;
-  --lien-Color: #E95501; 
-}
 
 
-=======
-:root {
-  font-size: 18px;
-  --couleur-principale: #e95501;
-  --couleur-secondaire: #6f9eab;
-}
->>>>>>> e28c037a1f1c5b6f0f71ca79ee359be0185e1658
+
 /*-------------------------HEADER STYLE-------------------------*/
 * {
   box-sizing: border-box;
