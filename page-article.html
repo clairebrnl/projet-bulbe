@@ -79,11 +79,20 @@
   <button id=btnPopup class="btnPopup">NewsLetter</button>
   <div id="overlay" class="overlay">
     <div id="popup" class="popup">
-      <h2>
+      <h2 class ="titlepopup">
         Recevez les dernières informations !
          <span id="btnClose" class="btnClose">&times;</span>
        </h2>
-       <p>Enter votre e-mail ici !</p>
+       <div class="inputbutton">
+       <input
+            class="inputmail"
+            type="email"
+            id="email"
+            name="email"
+            value="exemple@gmail.com"
+          />
+        <button id="btnMail">Envoyer</button>
+      </div>
     </div>
   </div>
            

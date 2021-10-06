@@ -374,6 +374,19 @@ h5{
   cursor: pointer;
 }
 
+.titlepopup{
+  color: white;
+  text-align: center;
+}
+
+.inputmail{
+  text-align: center;
+}
+
+.inputbutton{
+  display: flex;
+  justify-content: center;
+}
 
 
   /* ----------------CONTACT STYLE-----------------------*/
