@@ -1,5 +1,14 @@
 
 
+<<<<<<< HEAD
+=======
+:root {
+  font-size: 18px;
+  --couleur-principale: #e95501;
+  --couleur-secondaire: #6f9eab;
+}
+
+>>>>>>> a132269feb351866a263962884019849ebd61f34
 
 /*-------------------------HEADER STYLE-------------------------*/
 * {
@@ -14,11 +23,13 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+
 .subnav {
   display: none;
 }
 
 @media screen and (min-width: 376px) {
+
   header {
     display: flex;
     justify-content: space-between;
@@ -29,9 +40,11 @@ body {
     width: 100%;
     border-bottom: var(--couleur-secondaire) solid 5px;
   }
+
   nav {
     width: 30%;
   }
+
   .nav-items {
     display: flex;
     justify-content: space-between;
@@ -68,6 +81,7 @@ body {
   .deploy {
     position: relative;
   }
+
 
   .active-subnav:hover + .subnav, .active-subnav:focus + .subnav{
     display: block;
@@ -245,6 +259,7 @@ body {
   padding: 0.5em;
   background: #ff5f6d;
 }
+
 .lists {
   display: flex;
   align-items: flex-end;
@@ -265,6 +280,7 @@ img {
   list-style: none;
   padding-left: 1em;
 }
+
 .listfooter ul li a {
   color: #000000;
   text-align: left;
@@ -321,4 +337,10 @@ form {
   margin-top: 20px;
   margin-right: 10%;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width :376px){
+  .header{
+
+  }
 }
