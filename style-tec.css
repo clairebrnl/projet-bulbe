@@ -37,7 +37,11 @@
     display: flex;
     justify-content: space-between;
   }
+  .nav-list ul {
+    padding-left: 0;
+  }
   .nav-list li{
+    list-style: none;
     margin-top: 1em;
     padding-bottom: 0.3em;
     border-bottom: 2px rgb(255, 255, 255) solid;
@@ -45,6 +49,7 @@
   }
   .nav-list li > a {
     color: rgb(0, 0, 0);
+    text-decoration: none;
   }
   
   .sous-menu {
@@ -118,17 +123,7 @@
     text-align: center;
     text-decoration: none;
     padding-right: 10px;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
+  }  
   /*----------------ARTICLES STYLE----------------------*/
   
   aside,
@@ -204,7 +199,9 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
+.cards > a {
+  text-decoration: none;
+}
 .card{
   margin: 20px 20px;
   display: flex;
@@ -237,11 +234,9 @@
 }
 
 .card:hover {
-  background-color: #808080;
   transform: scale(1.05);
   transition: 0.2s;
   cursor: pointer;
-  ;
 }
 
 .card-date span {
