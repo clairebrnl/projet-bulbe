@@ -121,107 +121,106 @@ header {
 /*----------------ARTICLE CONTENT STYLE----------------------*/
 
 @media screen and (max-width: 768px) {
-  .flex-container {
+  .main {
     flex-direction: column;
   }
 }
 
-aside,
-section {
-  margin: 0;
-  justify-content: space-between;
-}
-
-.flex-container {
-  display: flex;
-}
-
-.wrapper {
-  margin: auto;
-  max-width: 75rem;
-}
-
 .hero {
-  padding: 0 10%;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.hero img {
-  border-radius: 100%;
-  width: 25px;
-  height: 25px;
-}
-
-.imgcontent {
-  width: 100px;
-  height: 100px;
-}
-
-.imgheader {
-  width: 25px;
-  height: 25px;
 }
 
 .content {
-  flex: 0 0 60%;
-  background-color: #ffffff;
-  border-right: 2px solid #000000;
+  display: flex;
+  margin: auto;
+  max-width: 80%;
+  flex-direction: row;
 }
+
+.main {
+  margin-right: 2%;
+}
+
+#main-article{
+  justify-content: space-between;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.main-titre {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.imgmainheader {
+  width: 25px;
+  height: 25px;
+}
+
+.main-body {
+  display: flex;
+}
+
+.imgmain {
+  max-width: 100%;
+}
+
+.main-text {
+  text-align: justify;
+  margin: 20px;
+}
+
+.main-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*----------------SIDEBAR STYLE----------------------*/
 
 .sidebar {
-  flex: 1 1 600px;
-  background-color: #ffffff;
+  flex: 1 1 50%;
 }
 
-#article {
-  background-color: #ffffff;
-}
-
-.article-header {
-  justify-content: space-around;
-  padding: 5px;
-  background-color: #ffffff;
-}
-
-.article-titre {
-  font-size: 12px;
-  text-align: right;
-}
-
-.articlecontent:hover {
-  background: gold;
-}
-
-.sidebarcontent:hover {
-  background: gold
-}
-
-.content-text {
-  color: rgb(0, 0, 0);
-  padding-right: 20px;
-}
-
-#sidebar {
-  background-color: #ffffff;
+.sidebar-article {
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .sidebar-header {
-  justify-content: space-around;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
   padding: 5px;
-  background-color: #ffffff;
 }
 
 .sidebar-titre {
   font-size: 12px;
-  text-align: right;
+}
+
+.imgsidebarbody {
+  min-width: 100%;
+  max-width: 100%;
 }
 
 .sidebar-text {
-  padding: 5px;
+  font-size: 12px;
   text-align: justify;
   color: rgb(0, 0, 0);
 }
+
+.sidebar-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 10px;
+}
+
 
 /*----------------FOOTER STYLE----------------------*/
 #footer-end {
