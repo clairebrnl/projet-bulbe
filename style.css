@@ -201,7 +201,7 @@ body {
   }
 
   .active-subnav:hover + .subnav,
-  .active-subnav:focus + .subnav {
+  .active-subnav:focus + .subnav, .subnav:hover {
     display: block;
     position: absolute;
     top: 53px;
