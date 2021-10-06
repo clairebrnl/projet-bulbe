@@ -335,6 +335,47 @@ h5{
   margin-top: 30px;
   margin-bottom: 10px;
 }
+
+ /*----------NewsLetter---Button-----------------*/
+.btnPopup{
+  background-color: #296475;
+  padding: 1em;
+  font-size: 1em;
+  color: white;
+  cursor: pointer;
+}
+
+.btnPopup:hover{
+  background-color: #4fc0e0;
+}
+
+.overlay{
+  position:fixed;
+  left:0px;
+  top:0px;
+  background-color: rgba(58, 58, 58, 0.664); /*----Voir opacité----*/
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.popup{
+  margin:20% auto;
+  width:70%;
+  background-color : rgb(7, 110, 151);
+  border-radius: 5px;
+  box-shadow: 15px 20 0 rgb(0, 0, 0 0.5);
+  padding: 1em;
+
+}
+
+.btnClose {
+  float: right;
+  cursor: pointer;
+}
+
+
+
   /* ----------------CONTACT STYLE-----------------------*/
 
 input[type="submit"] {
@@ -442,8 +483,12 @@ input[type="submit"] {
       margin-top: 20px;
       margin-bottom: 20px;
       padding: 20px;
-      width: 75%;
+      width: 60%;
       
+  }
+
+  .img-article{
+    width: 50%;
   }
 
   .usercom{
