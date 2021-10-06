@@ -159,12 +159,12 @@ header {
 }
 /*----------------ARTICLE CONTENT STYLE----------------------*/
 
-@media screen and (max-width: 768px) {
-  .main {
-    flex-direction: column;
+@media only screen and (max-width: 810px){
+  .content{
+    display: flex;
+      width: 100%; 
   }
 }
-
 
 .content {
   display: flex;
