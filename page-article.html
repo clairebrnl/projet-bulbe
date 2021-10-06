@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="page-article.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>PageArticleHTML</title>
   </head>
   <body>
+    <!-----------------------Header------------------------------------------------->
     <header>
-      <img class="logo-header" src="Ressources/logo bulb.png">
+      <img class="logo-header" src="Ressources/logo bulb.png" />
       <nav>
         <ul class="nav-list">
           <li><a href="index.html" class="accueil">Accueil</a></li>
@@ -27,13 +31,14 @@
         </ul>
       </nav>
     </header>
-
+<!----------------------------Section article---------------------------------------------->
     <section>
         <div id="all-article">
           <div class="titre-logo">
             <img class="img-techno" src="Ressources/html.png" alt="logo html5">
             <h2>Titre de l'article</h2>
           </div>
+          <!--Taille de l'image a changer pour la responsive-->
         <img class="img-article" src="Ressources/image-article.jpg" alt="ordinateur">
             <div class="date-author">
                 <div class="article-date">Le 30/09/2021</div>
@@ -43,8 +48,8 @@
         <div class="comment"></div>
         </div>
     </section>
-
-  <div id="comment-zone">
+<!--------------------Section commentaires------------------------------------------------------>
+   <div id="comment-zone">
     <h4>Laissez un commentaire</h4>
     <section-commentaires>
         <div class="laissezcom">
@@ -70,36 +75,68 @@
         </div>
     </section-bestcom>
   </div>
-    
+  <!--------------------------------Button Newsletter---------------------------------------------------->
+  <button id=btnPopup class="btnPopup">NewsLetter</button>
+  <div id="overlay" class="overlay">
+    <div id="popup" class="popup">
+      <h2 class ="titlepopup">
+        Recevez les dernières informations !
+         <span id="btnClose" class="btnClose">&times;</span>
+       </h2>
+       <div class="inputbutton">
+       <input
+            class="inputmail"
+            type="email"
+            id="email"
+            name="email"
+            value="exemple@gmail.com"
+          />
+        <button id="btnMail">Envoyer</button>
+      </div>
+    </div>
+  </div>
            
 
-    
-    <footer id="footer-end">
-      <div class="listfooter">
-        <ul>
-          <li><a href="#">Mentions légales</a></li>
-          <li><a href="#">Cookies</a></li>
-          <li><a href="#">Partenaires</a></li>
-        </ul>
-      </div>
-      <div class="listfooter">
-        <ul>
-          <li><a href="#">Publicité</a></li>
-          <li><a href="#">A propos</a></li>
-          <li><a href="#">Contactez-nous</a></li>
-        </ul>
-      </div>
-      <div class="listfooter">
-        <ul>
-          <li><a href="#">Aide</a></li>
-          <li><a href="#">NewsLetter</a></li>
-          <li><a href="#">On ne recrute pas</a></li>
-        </ul>
-      </div>
-      <div class="titlefooter">
-        <img class="logo-footer" src="Ressources/logo bulb.png" />
-      </div>
-    </footer>
+   <!-----------------------Footer-----------------------------------------------------------> 
+  <footer id="footer-end">
+    <div class="listfooter">
+      <h3>Mentions légales</h3>
+      <ul class="footer-end-ul">
+        <li class ="middle-list"><a href="#">Cookies</a></li>
+        <li><a href="#">Partenaires</a></li>
+      </ul>
+    </div>
+    <div class="listfooter">
+      <h3>Publicité</h3>
+      <ul class="footer-end-ul">
+        <li class ="middle-list"><a href="#">A propos</a></li>
+        <li><a href="contact.html">Contactez-nous</a></li>
+      </ul>
+    </div>
+    <div class="listfooter">
+      <h3>Aide</h3>
+      <ul class="footer-end-ul">
+        <li class ="middle-list"><a href="#">NewsLetter</a></li>
+        <li><a href="#">On ne recrute pas</a></li>
+      </ul>
+    </div>
+      <div class="container_logo_linkedin">
+        <div class="top">
+          <span class="round_linkedin"><a href="https://www.linkedin.com/in/cyril-cabrolier/"target="_blank"><img class ="round_linkedin1" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
+        </div>
+        <div class="middle">
+          <span class="round_linkedin"><a href="https://www.linkedin.com/in/laurie-pujos-02b8a6135/"target="_blank"><img class ="round_linkedin2" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
+          <span class="round_linkedin"><a href="https://www.linkedin.com/in/claire-brunel-087879211/"target="_blank"><img class ="round_linkedin3" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
+        </div>
+        <div class="bottom">
+          <span class="round_linkedin"><a href="https://www.linkedin.com/in/yohann-mahrez-6083a1221/"target="_blank"><img class ="round_linkedin4" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
+          <span class="round_linkedin"><a href="https://www.linkedin.com/in/leo-planelles-ab57b81b8/"target="_blank"><img class ="round_linkedin5" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
+        </div>
+    </div>
+    <div class="titlefooter">
+      <img class="logo-footer" src="Ressources/logo bulb.png" />
+    </div>
+  </footer>
 
     <script src="index.js"></script>
   </body>
