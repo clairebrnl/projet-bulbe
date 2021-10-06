@@ -246,6 +246,7 @@ body {
 
 .main {
   margin-right: 20px;
+  width: 80%;
 }
 
 #main-article{
@@ -274,10 +275,6 @@ body {
   display: flex;
 }
 
-.main-body img {
-  width: 600px;
-  height: auto;
-}
 
 .main-text {
   text-align: justify;
@@ -294,7 +291,7 @@ body {
 }
 
 .sidebar {
-  flex: 1 1 60%;
+  flex: 1 1 0;
 }
 
 .sidebar-article {
