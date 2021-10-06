@@ -1,4 +1,4 @@
-const message = "Merci ! ";
+const message = "Merci pour votre retour ! ";
 
 var el = document.getElementById("contactForm");
 if (el != null) {
