@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <title>Document</title>
-</head>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <img class ="logo-header" src="Ressources/logo bulb.png">
+      <nav>
+        <ul class="nav-items">
+          <li class="nav-items-list" ><a href="#">Accueil</a></li>
 
-<body>
-  <header>
-    <img class="logo-header" src="Ressources/logo bulb.png">
-    <nav>
-      <ul class="nav-list">
-        <li><a href="#">Accueil</a></li>
-        <li class="deploy">
-          <a href="#">Techno</a>
-          <ul class="sous-menu">
-            <li><a href="#">HTML/CSS</a></li>
-            <li><a href="tec.html">JS</a></li>
-            <li><a href="#">Outils</a></li>
-          </ul>
-        </li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+          <li class="nav-items-list deploy" >
+            <a  class="active-subnav" href="#">Techno</a>
 
+            <ul class="subnav">
+              <li class="subnav-items-list"><a href="#">HTML/CSS</a></li>
+              <li class="subnav-items-list"><a href="tec.html">JS</a></li>
+              <li class="subnav-items-list"><a href="#">PHP</a></li>
+              <li class="subnav-items-list"><a href="#">Outils</a></li>
+            </ul>
+
+          </li>
+          
+          <li class="nav-items-list"><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="burger">
+          <span class="line"></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- article content -->
+    
+    <section class="hero">
+
+
+    </section>
   <!-- article content -->
 
   <section class="hero">
@@ -67,7 +79,6 @@
 
 
     <!-- sidebar -->
-
     <aside class="sidebar">
 
       <div class="sidebar-article">
@@ -98,7 +109,6 @@
   </div>
 
   <!-- footer -->
-
   <footer id="footer-end">
     <div class="listfooter">
       <ul>
@@ -128,5 +138,4 @@
 
   <script src="index.js"></script>
 </body>
-
 </html>

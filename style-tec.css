@@ -59,8 +59,108 @@ header {
   header {
     flex-direction: row;
     justify-content: space-between;
+  }
+  .nav-list ul {
+    padding-left: 0;
+  }
+  .nav-list li{
+    list-style: none;
+    margin-top: 1em;
+    padding-bottom: 0.3em;
+    border-bottom: 2px rgb(255, 255, 255) solid;
+    font-size: 1.3rem;
+  }
+  .nav-list li > a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  .sous-menu {
+    display: none;
+  }
+  
+  @media screen and (min-width: 376px) {
+    body {
+      background-color: #ffffff;
+    }
+  
+    header {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 10%;
+      align-items: center;
+    }
+    nav {
+      width: 35%;
+    }
+    .nav-list li {
+      border: none;
+    }
+    .deploy > a::after {
+      content: ">";
+      font-size: 15px;
+      display: inline-block;
+      margin-left: 0.5em;
+    }
+    .deploy:hover > a::after {
+      transform: rotate(90deg);
+      transition: 0.5s;
+    }
+    .active-sousMenu {
+      margin-top: 1em;
+      position: absolute;
+      width: 10%;
+      display: block;
+      border-radius: 2px;
+      box-shadow: 1px 1px 5px rgb(131, 131, 131);
+      background-color: whitesmoke;
+    }
+    .active-sousMenu li {
+      padding: .5em;
+    }
+    .active-sousMenu li:hover {
+      background-color: rgb(158, 158, 158);
+    }
+    .active-sousMenu li > a:hover {
+      color: whitesmoke;
+    }
+  }
+  
+  
+  /* STYLE HEADER */
+  
+  /*----------------FOOTER STYLE----------------------*/
+  
+  #footer-end {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid;
+    padding: 0.5em;
+    background: #ff5f6d;
+    background: -webkit-linear-gradient(to right, #ff5f6d, #ffc371);
+    background: linear-gradient(to right, #ff5f6d, #ffc371);
+  }
+  
+  .listfooter {
+    text-align: center;
+    text-decoration: none;
+    padding-right: 10px;
+  }  
+  /*----------------ARTICLES STYLE----------------------*/
+  
+  aside,
+  section {
+    margin: 0;
+    /* padding: 1.25rem; */
+    justify-content: space-between;
+  }
+  
+  .flex-container {
+    display: flex;
     padding: 0 10%;
     align-items: center;
+
   }
   nav {
     width: 35%;
@@ -204,7 +304,9 @@ flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-evenly;
 }
-
+.cards > a {
+  text-decoration: none;
+}
 .card{
 margin: 20px 20px;
 display: flex;
@@ -242,6 +344,7 @@ border-radius: .8rem;
 }
 
 .card:hover {
+
 transform: scale(1.05);
 transition: 0.2s;
 cursor: pointer;
