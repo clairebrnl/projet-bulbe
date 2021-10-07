@@ -804,6 +804,10 @@ form {
 }
 
 /*--------------CARD STYLE-------------*/
+.tecTitle {
+  text-align: center;
+}
+
 .tecLogo {
   margin: 0 auto;
   width: 160px;
