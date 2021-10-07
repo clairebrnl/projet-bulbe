@@ -143,9 +143,9 @@ body {
 .subnav {
   display: none;
 }
- .nav-items {
+.nav-items {
   display: none;
-} 
+}
 .logo-header {
   width: 75px;
   height: 75px;
@@ -157,12 +157,13 @@ header {
   align-items: center;
   padding: 0 1em;
 }
-.nav-items {
+.active-nav-items {
+  display: block;
   position: absolute;
   top: 75px;
   left: 0;
   background-color: var(--couleur-principale);
-  width: 100vh;
+  width: 100%;
   height: 20vh;
 }
 .nav-items-list {
@@ -173,9 +174,12 @@ header {
   color: #ffffff;
 }
 
-
-
 @media screen and (min-width: 376px) {
+  /* Réinitialisation du menu */
+  .burger {
+    display: none;
+  }
+  /* -------------------------------- */
   header {
     display: flex;
     justify-content: space-between;
@@ -188,20 +192,27 @@ header {
   }
   nav {
     width: 30%;
+    height: 100%;
   }
   .nav-items {
+    width: 100%;
+    height: 100%;
+    background: none;
+    position: inherit;
     display: flex;
     justify-content: space-between;
-    align-self: center;
+    align-items: center;
     padding-left: 0;
     margin: 0;
+  }
+  .nav-items-list {
+    padding: .5em;
   }
   .nav-items-list > a {
     color: var(--couleur-principale);
     font-weight: 600;
     text-decoration: none;
     font-size: 1.2em;
-    width: 100%;
   }
   .nav-items-list > a::after {
     display: block;
@@ -224,13 +235,14 @@ header {
   }
 
   .subnav > li {
-    padding: .5em;
+    padding: 0.5em;
   }
   .active-subnav:hover + .subnav,
-  .active-subnav:focus + .subnav, .subnav:hover {
+  .active-subnav:focus + .subnav,
+  .subnav:hover {
     display: block;
     position: absolute;
-    top: 53px;
+    top: 60px;
     width: 200%;
     background-color: whitesmoke;
     padding: 1em 1em 1em 0.3em;
