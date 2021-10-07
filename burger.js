@@ -1,4 +1,4 @@
-const buttonBurger = document.querySelector(".btn-burger");
+const buttonBurger = document.querySelector(".logo-menu-burger");
 const navItems = document.querySelector(".nav-items");
 
 buttonBurger.addEventListener("click", function () {
