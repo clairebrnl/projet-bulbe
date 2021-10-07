@@ -196,33 +196,24 @@ body {
   .content {
     display: flex;
     flex-direction: column;
-  }
-
-  .imgmain{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    padding: none;
-    margin: none;
+    align-items: center;
   }
 
   .main-body {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .main-body img {
-    width: 100%;
+  flex-direction: column;
   }
 
   .main-text {
     font-size: 12px;
+    text-align: center;
   }
 
   .sidebar {
     display: flex;
-    justify-content: center;
+  }
+
+  .sidebar-body {
+    flex-direction: column;
   }
 
   .main-titre h2 {
@@ -250,6 +241,7 @@ h2:hover {
 
 span {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 span:hover {
@@ -286,12 +278,6 @@ span:hover {
 .main-body {
   display: flex;
 }
-
-.main-body img {
-
-}
-
-
 
 .main-text {
   text-align: justify;
