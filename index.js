@@ -22,7 +22,7 @@ function closePopup(){
 
 function closeAlertPopup() {
   overlay.style.display = 'none';
-  alert('Merci !');
+  alert('Merci ! Tu ne sera plus mou du BULB !');
   
 }
 

@@ -64,7 +64,8 @@
             <h5 class="pseudoavatar">Clairedu31</h5>
             <img class="avatar" src="Ressources/images.png"/>
             <textarea class="textcom" id="commentaire" cols="50" rows="10" placeholder="   Ecrivez votre commentaire ici //"></textarea>
-            <button class="envoiecom" id="sendCom" onclick="" title="envoyer">Envoyer</button>
+            <!--<button class="envoiecom" id="sendCom" onclick="" title="envoyer">Envoyer</button>-->
+            <button class="custom-btn2 btn-7"><span>Envoyer</span></button>
         </div>
     </section-commentaires>
 
@@ -84,7 +85,10 @@
     </section-bestcom>
   </div>
   <!--------------------------------Button Newsletter---------------------------------------------------->
-  <button id=btnPopup class="btnPopup">NewsLetter</button>
+  <h2 class="titlenews">Inscrivez-vous à la NewsLetter !</h2>
+  <div class="sectionbutton">
+    <button id=btnPopup class="btnPopup custom-btn btn-5"><span>NewsLetter</span></button>
+      <!--<button id=btnPopup class="btnPopup">NewsLetter</button>-->
   <div id="overlay" class="overlay">
     <div id="popup" class="popup">
       <h2 class ="titlepopup">
@@ -97,12 +101,13 @@
             type="email"
             id="email"
             name="email"
-            value="exemple@gmail.com"
+            placeholder="exemple@gmail.com"
           />
         <button id="btnMail">Envoyer</button>
       </div>
     </div>
   </div>
+</div>
            
 
    <!-----------------------Footer-----------------------------------------------------------> 
