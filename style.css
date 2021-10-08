@@ -648,21 +648,16 @@ span:hover {
 
 #all-article {
   text-align: center;
-
   width: 100%;
-
   margin-top: 100px;
 }
 h2 {
   font-size: 2em;
-
   font-weight: bold;
-
   margin-bottom: 20px;
 }
 .img-techno {
   width: 4%;
-
   margin-bottom: 20px;
 }
 .img-article {
@@ -671,42 +666,28 @@ h2 {
 }
 .date-author {
   display: flex;
-
   flex-direction: row;
-
   justify-content: space-evenly;
-
   color: #e95501;
 }
-.article-date {
+/* .article-date {
   margin-left: 160px;
 }
 .article-author {
   margin-right: 160px;
-}
+} */
 .title-star {
-  font-size: 4.5em;
+  font-size: 3em;
 }
 .text-article {
   text-align: justify;
-
-  font-size: 1.1em;
-
+  font-size: .9em;
   /*font-weight: bolder;*/
-
   line-height: 2em;
-
-  margin-left: auto;
-
-  margin-right: auto;
-
   margin-top: 20px;
-
   margin-bottom: 20px;
-
   padding: 20px;
-
-  width: 40%;
+  width: 100%;
 }
 
 .link-article {
@@ -723,10 +704,6 @@ h2 {
   border-top: 5px solid #6f9eab;
 
   border-bottom: 5px solid #6f9eab;
-
-  margin-left: 50px;
-
-  margin-right: 50px;
 }
 
 .pseudoavatar {
@@ -762,6 +739,10 @@ h2 {
 }
 
 .laissezcom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
 }
 
@@ -1245,7 +1226,7 @@ ul {
   border-radius: 100%;
 }
 
-@media screen and (max-width: 376) {
+/* @media screen and (max-width: 376) {
   .img-article {
     width: 100%;
   }
@@ -1255,7 +1236,7 @@ ul {
   }
 }
 
-/* @media screen and (min-width: 376px) {
+@media screen and (min-width: 376px) {
   body {
     background-color: white;
   }
@@ -1265,7 +1246,7 @@ ul {
 
     font-size: 1.1em;
 
-    /*font-weight: bolder;*/
+    font-weight: bolder;
 
     line-height: 2em;
 
@@ -1458,10 +1439,10 @@ ul {
   flex-direction: column;
 }
 
-body,
+/* body,
 html {
   height: 100%;
-}
+} */
 
 form {
   width: 60%;
