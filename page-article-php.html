@@ -5,139 +5,146 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <title>PageArticlePHP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
   </head>
   <body>
     <header>
-      <img class="logo-header" src="Ressources/logo bulb.png" />
+      <img class ="logo-header" src="Ressources/logo bulb.png">
       <nav>
         <ul class="nav-items">
-          <li class="nav-items-list"><a href="index.html">Accueil</a></li>
+          <li class="nav-items-list" ><a href="#">Accueil</a></li>
 
-          <li class="nav-items-list deploy">
-            <a class="active-subnav" href="#">Techno</a>
+          <li class="nav-items-list deploy" >
+            <a  class="active-subnav" href="#">Techno</a>
 
             <ul class="subnav">
               <li class="subnav-items-list"><a href="#">HTML/CSS</a></li>
               <li class="subnav-items-list"><a href="tec.html">JS</a></li>
-              <li class="subnav-items-list"><a href="#">PHP</a></li>
-              <li class="subnav-items-list"><a href="#">Outils</a></li>
+              <li class="subnav-items-list"><a href="page-article-php.html">PHP</a></li>
+              <li class="subnav-items-list"><a href="page-article-css.html">Outils</a></li>
             </ul>
-          </li>
 
+          </li>
+          
           <li class="nav-items-list"><a href="contact.html">Contact</a></li>
         </ul>
-        <div class="burger">
-          <button class="btn-burger">burger</button>
-          <span class="line"></span>
-        </div>
       </nav>
+      <div class="burger">
+        <img class="logo-menu-burger" src="./Ressources/hamburger-solid.svg" alt="">
+      </div>
     </header>
 
-    <section>
-      <div id="all-article">
-        <div class="titre-logo">
-          <img class="img-techno" src="Ressources/php.png" alt="logo css3" />
-          <h2>Titre de l'article</h2>
-        </div>
-        <img
-          class="img-article"
-          src="Ressources/image-article.jpg"
-          alt="ordinateur"
-        />
-        <div class="date-author">
-          <div class="article-date">Le 30/09/2021</div>
-          <div class="article-author">Billy LeChat</div>
-        </div>
-        <article class="text-article">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-          explicabo dolore esse voluptatibus laboriosam sed veniam qui
-          voluptate. Accusantium dolores, impedit saepe nihil itaque harum
-          ratione quis eligendi recusandae incidunt doloribus eum reiciendis
-          molestiae cumque qui fuga repudiandae tempora sed voluptates pariatur
-          minus! Nam ratione, consequatur facere dolore asperiores pariatur quam
-          reprehenderit possimus quas error repellat veritatis aliquid illum
-          voluptas voluptates, eligendi numquam accusantium nobis, minus
-          officiis accusamus rem atque mollitia! Ut nemo optio ea voluptatum
-          reiciendis laboriosam quidem vel modi dolor earum dolores, quaerat
-          sed, architecto incidunt. Velit esse numquam obcaecati similique. Quis
-          veritatis beatae delectus, sit voluptatum alias.
-        </article>
-        <div class="comment"></div>
-      </div>
-    </section>
-
-    <div id="comment-zone">
-      <h4>Laissez un commentaire</h4>
-      <section-commentaires>
-        <div class="laissezcom">
-          <h5 class="pseudoavatar">Clairedu31</h5>
-          <img class="avatar" src="Ressources/images.png" />
-          <textarea
-            class="textcom"
-            id="commentaire"
-            cols="50"
-            rows="10"
-            placeholder="   Ecrivez votre commentaire ici //"
-          ></textarea>
-          <button class="envoiecom" id="sendCom" onclick="" title="envoyer">
-            Envoyer
-          </button>
-        </div>
-      </section-commentaires>
-
-      <h4>Les meilleurs commentaires</h4>
-      <section-bestcom>
-        <div class="laissezcom">
-          <h5 class="pseudoavatar">Speculos62</h5>
-          <img class="avatar" src="Ressources/images2.png" />
-          <p class="usercom">
-            "Merci pour le post ! "Liker mon message svp !!"
-          </p>
-        </div>
-
-        <div class="laissezcom">
-          <h5 class="pseudoavatar">HombredéMadrid</h5>
-          <img class="avatar" src="Ressources/images (1).jpeg" />
-          <p class="usercom">"Yé soui tré content dé l'article !"</p>
-        </div>
-      </section-bestcom>
+    <div class="tecLogo">
+      <h2 class="tecTitle">PHP</h2>
+      <img src="Ressources/php.png" alt="">
     </div>
+  
+  <main class="cards">
+      
+
+        
+<div class="card">
+  <div class="card-img">
+      <img src="Ressources/laravel.webp" alt="">
+  </div>
+  <div class="card-info">
+      <h1 class="card-title">Laravel 8</h1>
+      <p class="card-text">Laravel 8 est maintenant disponible et comprend de nombreuses nouvelles fonctionnalités, notamment Laravel Jetstream, un répertoire de modèles, des classes de fabrique de modèles, et bien d'autres.</p>
+      <div class="card-date">
+        <span>01/10/2021</span>
+        <span>Larry Dimmick</span>
+    </div>
+  </div>
+</div>
+<div class="card">
+<div class="card-img">
+    <img src="Ressources/phpstorm.png" alt="">
+</div>
+<div class="card-info">
+    <h1 class="card-title">PhpStorm</h1>
+    <p class="card-text">PhpStorm est un IDE innovant conçu par JetBrains pour les développeurs PHP et web. Il offre une complétion de code intelligente, une coloration syntaxique, une configuration étendue du formatage du code, le pliage du code et plus encore.</p>
+    <div class="card-date">
+      <span>05/09/2021</span>
+      <span>Freddy Newandyke</span>
+  </div>
+</div>
+</div>
+<div class="card">
+<div class="card-img">
+  <img src="Ressources/symfony.jpg" alt="">
+</div>
+<div class="card-info">
+  <h1 class="card-title">6 raisons d'utiliser Symfony</h1>
+  <p class="card-text">Lorsque l'on crée un site web, utiliser un framework est une bonne chose. Faire le bon choix est encore mieux. Voici six bonnes raisons d'utiliser Symfony d'un point de vue stratégique.</p>
+  <div class="card-date">
+    <span>04/09/2021</span>
+    <span>Vic Vega</span>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-img">
+<img src="Ressources/suffle.png" alt="">
+</div>
+<div class="card-info">
+<h1 class="card-title">Snuffleupagus, qu'est-ce que c'est ?</h1>
+<p class="card-text">Snuffleupagus est un module PHP7+ conçu pour augmenter de façon drastique le coût des attaques contre les sites web. Sans avoir à toucher au code, l'administrateur peut corriger des vulnérabilités spécifiques .</p>
+<div class="card-date">
+  <span>14/08/2021</span>
+  <span>Joe Cabot</span>
+</div>
+</div>
+</div>
+
+
+      </main>
+
+
+    <!-- footer -->
+  <footer id="footer-end">
+    <div class="listfooter">
+      <h3>Mentions légales</h3>
+      <ul class="footer-end-ul">
+        <li class ="middle-list"><a href="#">Cookies</a></li>
+        <li><a href="#">Partenaires</a></li>
+      </ul>
+    </div>
+    <div class="listfooter">
+      <h3>Publicité</h3>
+      <ul class="footer-end-ul">
+        <li class ="middle-list"><a href="#">A propos</a></li>
+        <li><a href="contact.html">Contactez-nous</a></li>
+      </ul>
+    </div>
+    <div class="listfooter">
+      <h3>Aide</h3>
+      <ul class="footer-end-ul">
+        <li class ="middle-list"><a href="#">NewsLetter</a></li>
+        <li><a href="#">On ne recrute pas</a></li>
+      </ul>
+    </div>
+      <div class="container_logo_linkedin">
+        <div class="top">
+          <span class="round_linkedin"><a href="https://www.linkedin.com/in/cyril-cabrolier/"target="_blank"><img class ="round_linkedin1" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
+        </div>
+        <div class="middle">
+          <span class="round_linkedin"><a href="https://www.linkedin.com/in/laurie-pujos-02b8a6135/"target="_blank"><img class ="round_linkedin2" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
+          <span class="round_linkedin"><a href="https://www.linkedin.com/in/claire-brunel-087879211/"target="_blank"><img class ="round_linkedin3" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
+        </div>
+        <div class="bottom">
+          <span class="round_linkedin"><a href="https://www.linkedin.com/in/yohann-mahrez-6083a1221/"target="_blank"><img class ="round_linkedin4" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
+          <span class="round_linkedin"><a href="https://www.linkedin.com/in/leo-planelles-ab57b81b8/"target="_blank"><img class ="round_linkedin5" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
+        </div>
+    </div>
+    <div class="titlefooter">
+      <img class="logo-footer" src="Ressources/logo bulb.png" />
+    </div>
+  </footer>
 
     <script src="index.js"></script>
-
-    <footer id="footer-end">
-      <div class="listfooter">
-        <ul>
-          <li><a href="#">Mentions légales</a></li>
-          <li><a href="#">Cookies</a></li>
-          <li><a href="#">Partenaires</a></li>
-        </ul>
-      </div>
-      <div class="listfooter">
-        <ul>
-          <li><a href="#">Publicité</a></li>
-          <li><a href="#">A propos</a></li>
-          <li><a href="#">Contactez-nous</a></li>
-        </ul>
-      </div>
-      <div class="listfooter">
-        <ul>
-          <li><a href="#">Aide</a></li>
-          <li><a href="#">NewsLetter</a></li>
-          <li><a href="#">On ne recrute pas</a></li>
-        </ul>
-      </div>
-      <div class="titlefooter">
-        <img src="Ressources/logo bulb.png" />
-      </div>
-    </footer>
-
-    <script src="index.js"></script>
+    <script src="burger.js"></script>
   </body>
 </html>

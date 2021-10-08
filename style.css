@@ -401,13 +401,13 @@ h1 {
   height: 40px;
 }
 
-.buttonLoupe{
+.buttonLoupe {
   display: flex;
   justify-content: center;
 }
 /*----------------ARTICLE RESPONSIVE CONTENT STYLE----------------------*/
 
-@media only screen and (max-width: 810px){
+@media only screen and (max-width: 810px) {
   .content {
     display: flex;
     flex-direction: column;
@@ -415,16 +415,8 @@ h1 {
   }
 
   .main-body {
-  flex-direction: column;
+    flex-direction: column;
   }
-
-  .main-body img {
-    max-width: 100%;
-  }
-
-.imgsidebarbody {
-  max-width: 100%;
-}
 
   .main-text {
     font-size: 12px;
@@ -446,7 +438,6 @@ h1 {
   .sidebar-titre h2 {
     font-size: 10px;
   }
-
 }
 
 /*----------------ARTICLE CONTENT STYLE----------------------*/
@@ -468,7 +459,7 @@ span {
 }
 
 span:hover {
-  color: #6f9eab;;
+  color: #6f9eab;
 }
 
 .main {
@@ -500,6 +491,7 @@ span:hover {
 
 .main-body {
   display: flex;
+  width: 100%;
 }
 
 .main-body img {
@@ -552,7 +544,6 @@ span:hover {
   text-align: justify;
   color: rgb(97, 97, 97);
 }
-
 
 /*------------------------PAGE ARTICLE----------------------*/
 
@@ -993,6 +984,10 @@ form {
 }
 
 /*--------------CARD STYLE-------------*/
+.tecTitle {
+  text-align: center;
+}
+
 .tecLogo {
   margin: 0 auto;
   width: 160px;
@@ -1068,6 +1063,7 @@ form {
   font-size: 2.2rem;
   margin: 1.5rem 0 2rem;
   color: black;
+  text-align: center;
 }
 
 .card-info {
@@ -1088,8 +1084,16 @@ form {
     font-size: smaller;
   }
 
+  .card-date span {
+    font-size: 1rem;
+  }
+
   .card-img {
     height: max-content;
     transform: translate(0, -1rem);
+  }
+
+  .card-title {
+    font-size: 1.7rem;
   }
 }
