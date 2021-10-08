@@ -401,23 +401,71 @@ h1 {
   height: 40px;
 }
 
-/*----------------ARTICLE CONTENT STYLE----------------------*/
+.buttonLoupe{
+  display: flex;
+  justify-content: center;
+}
+/*----------------ARTICLE RESPONSIVE CONTENT STYLE----------------------*/
 
-@media screen and (max-width: 768px) {
-  .main {
+@media only screen and (max-width: 810px){
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-body {
+  flex-direction: column;
+  }
+
+  .main-text {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .sidebar {
+    display: flex;
+  }
+
+  .sidebar-body {
     flex-direction: column;
   }
+
+  .main-titre h2 {
+    font-size: 10px;
+  }
+
+  .sidebar-titre h2 {
+    font-size: 10px;
+  }
+
 }
+
+/*----------------ARTICLE CONTENT STYLE----------------------*/
 
 .content {
   display: flex;
-  margin: auto;
+  margin: 0 auto;
   max-width: 80%;
-  flex-direction: row;
+  border-bottom: solid 1px rgb(235, 235, 235);
+}
+
+h2:hover {
+  color: #6f9eab;
+}
+
+span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+span:hover {
+  color: #6f9eab;;
 }
 
 .main {
-  margin-right: 2%;
+  margin-right: 20px;
+  width: 80%;
 }
 
 #main-article {
@@ -446,8 +494,9 @@ h1 {
   display: flex;
 }
 
-.imgmain {
-  max-width: 100%;
+.main-body img {
+  width: 100%;
+  height: 100%;
 }
 
 .main-text {
@@ -459,44 +508,41 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-.sidebar {
-  flex: 1 1 50%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 8px;
 }
 
-.sidebar-article {
-  margin-top: 2%;
-  margin-bottom: 2%;
+.sidebar {
+  flex: 1 1 0;
 }
 
 .sidebar-header {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  padding: 5px;
 }
 
 .sidebar-titre {
-  font-size: 12px;
+  font-size: 8px;
+}
+
+.sidebar-body {
+  margin-bottom: 10px;
 }
 
 .imgsidebarbody {
-  min-width: 100%;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .sidebar-text {
-  font-size: 12px;
+  margin-top: 2px;
+  font-size: 10px;
   text-align: justify;
-  color: rgb(0, 0, 0);
+  color: rgb(97, 97, 97);
 }
 
-.sidebar-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 10px;
-}
 
 /*------------------------PAGE ARTICLE----------------------*/
 
