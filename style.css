@@ -422,7 +422,11 @@ h1 {
 
   .main-body {
   flex-direction: column;
+  display: flex;
+  align-items: center;
   }
+  
+
 
   .main-text {
     font-size: 12px;
@@ -501,8 +505,10 @@ span:hover {
 }
 
 .main-body img {
-  width: 500px;
+  max-width: 100%;
   height: auto;
+  min-height: 0;
+  min-width: 0;
 }
 
 .main-text {
