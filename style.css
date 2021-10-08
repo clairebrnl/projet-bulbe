@@ -495,8 +495,10 @@ span:hover {
 }
 
 .main-body img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 0;
+  min-width: 0;
 }
 
 .main-text {
