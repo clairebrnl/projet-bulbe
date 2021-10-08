@@ -368,6 +368,7 @@ h1 {
 
 /*----------------HEADER STYLE----------------------*/
 /*----------------HERO STYLE----------------------*/
+
 .recherche {
   width: 100%;
   display: flex;
@@ -414,9 +415,18 @@ h1 {
     align-items: center;
   }
 
+  .main-body img{
+    width: 80%;
+    
+  }
+
   .main-body {
   flex-direction: column;
+  display: flex;
+  align-items: center;
   }
+  
+
 
   .main-text {
     font-size: 12px;
@@ -752,6 +762,7 @@ input[type="submit"] {
   padding: 5px 10px;
 }
 
+
 /*----------------FOOTER STYLE----------------------*/
 
 #footer-end {
@@ -977,7 +988,7 @@ form {
   border: 1px solid;
   padding: 10px;
   letter-spacing: 2px;
-  background-color: whitesmoke;
+  background-color: lightslategrey;
   align-self: flex-end;
   margin-top: 20px;
   margin-right: 10%;

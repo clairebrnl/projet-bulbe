@@ -24,5 +24,17 @@ function closeAlertPopup() {
   alert("Merci !");
 }
 
+
+//---------------Button contact---------------//
+const message = "Merci pour votre retour ! ";
+
+
 //---------------Button burger-------//
 
+var el = document.getElementById("contactForm");
+if (el != null) {
+  el.addEventListener("submit", function (event) {
+    event.preventDefault();
+    alert(message);
+  });
+}
