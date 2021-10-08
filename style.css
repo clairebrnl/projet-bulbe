@@ -507,15 +507,10 @@ span:hover {
 }
 
 .main-body img {
-<<<<<<< HEAD
   max-width: 100%;
   height: auto;
   min-height: 0;
   min-width: 0;
-=======
-  width: 100%;
-  height: auto;
->>>>>>> 241aaed4e7fcf5ca7f9e58ff7d85e41b3e0df50d
 }
 
 .main-text {
