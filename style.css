@@ -416,9 +416,10 @@ h1 {
   }
 
   .main-body img{
-    width: 80%;
     
-  }
+    max-width: 100%;
+    height: auto;
+    }
 
   .main-body {
   flex-direction: column;
