@@ -45,3 +45,15 @@ if (el != null) {
     alert(message);
   });
 }
+
+//---------------Contact button-------//
+
+const message = " Merci pour votre retour ! ";
+
+var el = document.getElementById("contact");
+if (el != null) {
+  el.addEventListener("submit", function (event) {
+    event.preventDefault();
+    alert(message);
+  });
+}
