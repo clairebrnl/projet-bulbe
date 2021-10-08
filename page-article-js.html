@@ -5,138 +5,255 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <title>PageArticleJS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
   </head>
   <body>
     <header>
-      <img class="logo-header" src="Ressources/logo bulb.png" />
+      <img class ="logo-header" src="Ressources/logo bulb.png">
       <nav>
         <ul class="nav-items">
-          <li class="nav-items-list"><a href="index.html">Accueil</a></li>
+          <li class="nav-items-list" ><a href="#">Accueil</a></li>
 
-          <li class="nav-items-list deploy">
-            <a class="active-subnav" href="#">Techno</a>
+          <li class="nav-items-list deploy" >
+            <a  class="active-subnav" href="#">Techno</a>
 
             <ul class="subnav">
               <li class="subnav-items-list"><a href="#">HTML/CSS</a></li>
               <li class="subnav-items-list"><a href="tec.html">JS</a></li>
-              <li class="subnav-items-list"><a href="#">PHP</a></li>
-              <li class="subnav-items-list"><a href="#">Outils</a></li>
+              <li class="subnav-items-list"><a href="page-article-php.html">PHP</a></li>
+              <li class="subnav-items-list"><a href="page-article-css.html">Outils</a></li>
             </ul>
-          </li>
 
+          </li>
+          
           <li class="nav-items-list"><a href="contact.html">Contact</a></li>
         </ul>
-        <div class="burger">
-          <button class="btn-burger">burger</button>
-          <span class="line"></span>
-        </div>
       </nav>
+      <div class="burger">
+        <img class="logo-menu-burger" src="./Ressources/hamburger-solid.svg" alt="">
+      </div>
     </header>
 
-    <section>
-      <div id="all-article">
-        <div class="titre-logo">
-          <img class="img-techno" src="Ressources/JS.png" alt="logo css3" />
-          <h2>Titre de l'article</h2>
-        </div>
-        <img
-          class="img-article"
-          src="Ressources/image-article.jpg"
-          alt="ordinateur"
-        />
-        <div class="date-author">
-          <div class="article-date">Le 30/09/2021</div>
-          <div class="article-author">Billy LeChat</div>
-        </div>
-        <article class="text-article">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-          explicabo dolore esse voluptatibus laboriosam sed veniam qui
-          voluptate. Accusantium dolores, impedit saepe nihil itaque harum
-          ratione quis eligendi recusandae incidunt doloribus eum reiciendis
-          molestiae cumque qui fuga repudiandae tempora sed voluptates pariatur
-          minus! Nam ratione, consequatur facere dolore asperiores pariatur quam
-          reprehenderit possimus quas error repellat veritatis aliquid illum
-          voluptas voluptates, eligendi numquam accusantium nobis, minus
-          officiis accusamus rem atque mollitia! Ut nemo optio ea voluptatum
-          reiciendis laboriosam quidem vel modi dolor earum dolores, quaerat
-          sed, architecto incidunt. Velit esse numquam obcaecati similique. Quis
-          veritatis beatae delectus, sit voluptatum alias.
-        </article>
-        <div class="comment"></div>
-      </div>
-    </section>
-
-    <div id="comment-zone">
-      <h4>Laissez un commentaire</h4>
-      <section-commentaires>
-        <div class="laissezcom">
-          <h5 class="pseudoavatar">Clairedu31</h5>
-          <img class="avatar" src="Ressources/images.png" />
-          <textarea
-            class="textcom"
-            id="commentaire"
-            cols="50"
-            rows="10"
-            placeholder="   Ecrivez votre commentaire ici //"
-          ></textarea>
-          <button class="envoiecom" id="sendCom" onclick="" title="envoyer">
-            Envoyer
-          </button>
-        </div>
-      </section-commentaires>
-
-      <h4>Les meilleurs commentaires</h4>
-      <section-bestcom>
-        <div class="laissezcom">
-          <h5 class="pseudoavatar">Speculos62</h5>
-          <img class="avatar" src="Ressources/images2.png" />
-          <p class="usercom">
-            "Merci pour le post ! "Liker mon message svp !!"
-          </p>
-        </div>
-
-        <div class="laissezcom">
-          <h5 class="pseudoavatar">HombredéMadrid</h5>
-          <img class="avatar" src="Ressources/images (1).jpeg" />
-          <p class="usercom">"Yé soui tré content dé l'article !"</p>
-        </div>
-      </section-bestcom>
+    <div class="tecLogo">
+      <h2 class="tecTitle">JAVASCRIPT</h2>
+      <img src="https://logos-marques.com/wp-content/uploads/2021/03/JavaScript-Logo.png" alt="">
     </div>
 
-    <script src="index.js"></script>
+    <label for=""></label>
+  
+  <main class="cards">
+      
 
-    <footer id="footer-end">
-      <div class="listfooter">
-        <ul>
-          <li><a href="#">Mentions légales</a></li>
-          <li><a href="#">Cookies</a></li>
-          <li><a href="#">Partenaires</a></li>
-        </ul>
+        <div class="card">
+          <div class="card-img">
+              <img src="Ressources/vuejs.jpg" alt="Logo VueJs">
+          </div>
+          <div class="card-info">
+              <h1 class="card-title">Vue.js V3</h1>
+              <p class="card-text">L'équipe de Vue.js Core apporte de nouvelles fonctionnalités intéressantes dans Vue 3. API de composition, Fragments, Portails et Suspense, pour n'en citer que quelques-unes. Découvrez-les toutes dès maintenant.</p>
+              <div class="card-date">
+                <span>05/05/2021</span>
+                <span>Michael Walsh</span>
+            </div>
+          </div>
+      </div></a>
+      <div class="card">
+        <div class="card-img">
+            <img src="Ressources/angular.png" alt="Logo Angular">
+        </div>
+        <div class="card-info">
+            <h1 class="card-title">Angular DevTools</h1>
+            <p class="card-text">Une extension Chrome qui fournit des capacités de débogage et de profilage pour les applications Angular. 
+             <br> Angular DevTools supporte Angular v9 et plus, avec Ivy activé.</p>
+            <div class="card-date">
+              <span>11/12/2020</span>
+              <span>Lawrence Cohen</span>
+          </div>
+        </div>
+    </div>
+    <div class="card">
+      <div class="card-img">
+          <img src="Ressources/nodejs.png" alt="NodeJs logo">
       </div>
-      <div class="listfooter">
-        <ul>
-          <li><a href="#">Publicité</a></li>
-          <li><a href="#">A propos</a></li>
-          <li><a href="#">Contactez-nous</a></li>
-        </ul>
+      <div class="card-info">
+          <h1 class="card-title">Node.js : Guide Ultime</h1>
+          <p class="card-text">NodeJS est un environnement d'exécution permettant d’utiliser le JavaScript côté serveur. Grâce à son fonctionnement non bloquant, il permet de concevoir des applications en réseau performantes, telles qu'un serveur web, ou une API. Débutant ou amateur, ce guide est indispensable.</p>
+          <div class="card-date">
+            <span>08/12/2020</span>
+            <span>Clark Devereaux</span>
+        </div>
       </div>
-      <div class="listfooter">
-        <ul>
-          <li><a href="#">Aide</a></li>
-          <li><a href="#">NewsLetter</a></li>
-          <li><a href="#">On ne recrute pas</a></li>
-        </ul>
+  </div>
+  <div class="card">
+    <div class="card-img">
+        <img src="Ressources/javascript logo.png" alt="javascript logo">
+    </div>
+    <div class="card-info">
+        <h1 class="card-title">JS ou PHP ?</h1>
+        <p class="card-text">PHP et JavaScript sont deux langages de script que les développeurs web utilisent fréquemment, avec leurs propres nuances et cas d’utilisation.
+          Explorons ensemble les différences entre les deux et les circonstances d'utilisation de chaque langage dans les projets de développement.</p>
+        <div class="card-date">
+          <span>23/10/2020</span>
+          <span>Richard Wang</span>
       </div>
-      <div class="titlefooter">
-        <img src="Ressources/logo bulb.png" />
-      </div>
-    </footer>
+    </div>
+</div>
+<div class="card">
+  <div class="card-img">
+      <img src="Ressources/vuejs.jpg" alt="Logo VueJs">
+  </div>
+  <div class="card-info">
+      <h1 class="card-title">Vue.js V3</h1>
+      <p class="card-text">L'équipe de Vue.js Core apporte de nouvelles fonctionnalités intéressantes dans Vue 3. API de composition, Fragments, Portails et Suspense, pour n'en citer que quelques-unes. Découvrez-les toutes dès maintenant.</p>
+      <div class="card-date">
+        <span>05/05/2021</span>
+        <span>Michael Walsh</span>
+    </div>
+  </div>
+</div></a>
+<div class="card">
+<div class="card-img">
+    <img src="Ressources/angular.png" alt="Logo Angular">
+</div>
+<div class="card-info">
+    <h1 class="card-title">Angular DevTools</h1>
+    <p class="card-text">Une extension Chrome qui fournit des capacités de débogage et de profilage pour les applications Angular. 
+     <br> Angular DevTools supporte Angular v9 et plus, avec Ivy activé.</p>
+    <div class="card-date">
+      <span>11/12/2020</span>
+      <span>Lawrence Cohen</span>
+  </div>
+</div>
+</div>
+<div class="card">
+<div class="card-img">
+  <img src="Ressources/nodejs.png" alt="NodeJs logo">
+</div>
+<div class="card-info">
+  <h1 class="card-title">Node.js : Guide Ultime</h1>
+  <p class="card-text">NodeJS est un environnement d'exécution permettant d’utiliser le JavaScript côté serveur. Grâce à son fonctionnement non bloquant, il permet de concevoir des applications en réseau performantes, telles qu'un serveur web, ou une API. Débutant ou amateur, ce guide est indispensable.</p>
+  <div class="card-date">
+    <span>08/12/2020</span>
+    <span>Clark Devereaux</span>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-img">
+<img src="Ressources/javascript logo.png" alt="javascript logo">
+</div>
+<div class="card-info">
+<h1 class="card-title">JS ou PHP ?</h1>
+<p class="card-text">PHP et JavaScript sont deux langages de script que les développeurs web utilisent fréquemment, avec leurs propres nuances et cas d’utilisation.
+  Explorons ensemble les différences entre les deux et les circonstances d'utilisation de chaque langage dans les projets de développement.</p>
+<div class="card-date">
+  <span>23/10/2020</span>
+  <span>Richard Wang</span>
+</div>
+</div>
+</div>
+<div class="card">
+  <div class="card-img">
+      <img src="Ressources/vuejs.jpg" alt="Logo VueJs">
+  </div>
+  <div class="card-info">
+      <h1 class="card-title">Vue.js V3</h1>
+      <p class="card-text">L'équipe de Vue.js Core apporte de nouvelles fonctionnalités intéressantes dans Vue 3. API de composition, Fragments, Portails et Suspense, pour n'en citer que quelques-unes. Découvrez-les toutes dès maintenant.</p>
+      <div class="card-date">
+        <span>05/05/2021</span>
+        <span>Michael Walsh</span>
+    </div>
+  </div>
+</div></a>
+<div class="card">
+<div class="card-img">
+    <img src="Ressources/angular.png" alt="Logo Angular">
+</div>
+<div class="card-info">
+    <h1 class="card-title">Angular DevTools</h1>
+    <p class="card-text">Une extension Chrome qui fournit des capacités de débogage et de profilage pour les applications Angular. 
+     <br> Angular DevTools supporte Angular v9 et plus, avec Ivy activé.</p>
+    <div class="card-date">
+      <span>11/12/2020</span>
+      <span>Lawrence Cohen</span>
+  </div>
+</div>
+</div>
+<div class="card">
+<div class="card-img">
+  <img src="Ressources/nodejs.png" alt="NodeJs logo">
+</div>
+<div class="card-info">
+  <h1 class="card-title">Node.js : Guide</h1>
+  <p class="card-text">NodeJS est un environnement d'exécution permettant d’utiliser le JavaScript côté serveur. Grâce à son fonctionnement non bloquant, il permet de concevoir des applications en réseau performantes, telles qu'un serveur web, ou une API. Débutant ou amateur, ce guide est indispensable.</p>
+  <div class="card-date">
+    <span>08/12/2020</span>
+    <span>Clark Devereaux</span>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-img">
+<img src="Ressources/javascript logo.png" alt="javascript logo">
+</div>
+<div class="card-info">
+<h1 class="card-title">JS ou PHP ?</h1>
+<p class="card-text">PHP et JavaScript sont deux langages de script que les développeurs web utilisent fréquemment, avec leurs propres nuances et cas d’utilisation.
+  Explorons ensemble les différences entre les deux et les circonstances d'utilisation de chaque langage dans les projets de développement.</p>
+<div class="card-date">
+  <span>23/10/2020</span>
+  <span>Richard Wang</span>
+</div>
+</div>
+</div>
+
+
+      </main>
+
+
+    <!-- footer -->
+  <footer id="footer-end">
+    <div class="listfooter">
+      <h3>Mentions légales</h3>
+      <ul class="footer-end-ul">
+        <li class ="middle-list"><a href="#">Cookies</a></li>
+        <li><a href="#">Partenaires</a></li>
+      </ul>
+    </div>
+    <div class="listfooter">
+      <h3>Publicité</h3>
+      <ul class="footer-end-ul">
+        <li class ="middle-list"><a href="#">A propos</a></li>
+        <li><a href="contact.html">Contactez-nous</a></li>
+      </ul>
+    </div>
+    <div class="listfooter">
+      <h3>Aide</h3>
+      <ul class="footer-end-ul">
+        <li class ="middle-list"><a href="#">NewsLetter</a></li>
+        <li><a href="#">On ne recrute pas</a></li>
+      </ul>
+    </div>
+      <div class="container_logo_linkedin">
+        <div class="top">
+          <span class="round_linkedin"><a href="https://www.linkedin.com/in/cyril-cabrolier/"target="_blank"><img class ="round_linkedin1" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
+        </div>
+        <div class="middle">
+          <span class="round_linkedin"><a href="https://www.linkedin.com/in/laurie-pujos-02b8a6135/"target="_blank"><img class ="round_linkedin2" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
+          <span class="round_linkedin"><a href="https://www.linkedin.com/in/claire-brunel-087879211/"target="_blank"><img class ="round_linkedin3" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
+        </div>
+        <div class="bottom">
+          <span class="round_linkedin"><a href="https://www.linkedin.com/in/yohann-mahrez-6083a1221/"target="_blank"><img class ="round_linkedin4" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
+          <span class="round_linkedin"><a href="https://www.linkedin.com/in/leo-planelles-ab57b81b8/"target="_blank"><img class ="round_linkedin5" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
+        </div>
+    </div>
+    <div class="titlefooter">
+      <img class="logo-footer" src="Ressources/logo bulb.png" />
+    </div>
+  </footer>
 
     <script src="index.js"></script>
     <script src="burger.js"></script>
