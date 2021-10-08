@@ -27,6 +27,14 @@ function closeAlertPopup() {
 }
 
 
+//----------------Button envoyer ------------//
 
+const btnCom = document.querySelector('.btn-7');
+
+btnCom.addEventListener('click', maintenance);
+
+function maintenance(){
+  alert("Impossible d'envoyer un commentaire ! Vérifier votre connection internet !");
+};
 
 
