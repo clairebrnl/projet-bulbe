@@ -547,8 +547,6 @@ span:hover {
   margin: auto;
 
   max-width: 80%;
-
-  flex-direction: row;
 }
 .main {
   margin-right: 2%;
@@ -561,7 +559,6 @@ span:hover {
 
   flex-direction: row-reverse;
 
-  justify-content: space-between;
 
   padding: 5px;
 }
@@ -1308,7 +1305,6 @@ ul {
 
     margin: 0 auto;
   }
-
 
 .li-center {
   padding: 10px 10px;
