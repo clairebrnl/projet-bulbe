@@ -5,12 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <title>PageArticlePHP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
   </head>
   <body>
     <header>
@@ -23,99 +21,90 @@
             <a  class="active-subnav" href="#">Techno</a>
 
             <ul class="subnav">
-              <li class="subnav-items-list"><a href="#">HTML/CSS</a></li>
-              <li class="subnav-items-list"><a href="tec.html">JS</a></li>
-              <li class="subnav-items-list"><a href="#">PHP</a></li>
-              <li class="subnav-items-list"><a href="#">Outils</a></li>
+              <li class="subnav-items-list"><a href="page-article-js.html">HTML/CSS</a></li>
+              <li class="subnav-items-list"><a href="page-article-js.html">JS</a></li>
+              <li class="subnav-items-list"><a href="page-article-php.html">PHP</a></li>
+              <li class="subnav-items-list"><a href="page-article-php.html">Outils</a></li>
             </ul>
 
           </li>
           
           <li class="nav-items-list"><a href="contact.html">Contact</a></li>
         </ul>
-        <div class="burger">
-          <span class="line"></span>
-        </div>
       </nav>
+      <div class="burger">
+        <img class="logo-menu-burger" src="./Ressources/hamburger-solid.svg" alt="">
+      </div>
     </header>
 
-    <section>
-        <div id="all-article">
-          <div class="titre-logo">
-            <img class="img-techno" src="Ressources/php.png" alt="logo css3">
-            <h2 class="title-star">Laravel 8 !</h2>
-          </div>
-        <img class="img-article" src="Ressources/laravel8.png" alt="ordinateur">
-            <div class="date-author">
-                <div class="article-date">Le 01/10/2021</div>
-                <div class="article-author">Larry Dimmick</div>
-            </div>
-        <article class="text-article">Laravel 8 est maintenant publié et comprend de nombreuses nouvelles fonctionnalités, notamment Laravel Jetstream, un répertoire de modèles, des classes d'usine de modèles, un écrasement de la migration, des améliorations de limitation du débit, des assistants de test temporel, des composants de lame dynamiques et bien d'autres fonctionnalités. Avant de nous lancer dans les nouvelles fonctionnalités, nous aimerions souligner qu'à partir de la version 6, Laravel suit désormais semver et publiera une nouvelle version majeure tous les six mois. Vous pouvez voir <a class="link-article" href="https://laravel-news.com/laravel-releases" target="blank">comment fonctionne le processus de publication ici.</a><br>
-          Laravel Jetstream améliore l'échafaudage d'interface utilisateur Laravel existant dans les versions précédentes. Il fournit un point de départ pour de nouveaux projets, y compris la connexion, l'enregistrement, la vérification des e-mails, l'authentification à deux facteurs, la gestion de session, la prise en charge des API via Laravel et la gestion d'équipe.<br>
+    <div class="tecLogo">
+      <h2 class="tecTitle">PHP</h2>
+      <img src="Ressources/php.png" alt="">
+    </div>
+  
+  <main class="cards">
+      
 
-          Le squelette d'application de Laravel 8 comprend un répertoire app/Models. Toutes les commandes de générateur supposent que des modèles existent dans app/Models ; Cependant, si ce répertoire n'existe pas, le framework supposera que l'application conserve les modèles dans le dossier app/.<br>
-          Si votre application contient de nombreux fichiers de migration, vous pouvez désormais les écraser dans un seul fichier SQL. Ce fichier sera exécuté en premier lors de l'exécution des migrations, suivi de tous les fichiers de migration restants qui ne font pas partie du fichier de schéma écrasé. L'écrasement des migrations existantes peut réduire le gonflement des fichiers de migration et éventuellement améliorer les performances lors de l'exécution des tests.<br>
-        </article>
-        <div class="comment"></div>
-        </div>
-    </section>
-<!--------------------Section commentaires------------------------------------------------------>
-<div id="comment-zone">
-  <h4>Laissez un commentaire</h4>
-  <section-commentaires>
-      <div class="laissezcom">
-          <h5 class="pseudoavatar">Clairedu31</h5>
-          <img class="avatar" src="Ressources/images.png"/>
-          <textarea class="textcom" id="commentaire" cols="50" rows="10" placeholder="   Ecrivez votre commentaire ici //"></textarea>
-          <!--<button class="envoiecom" id="sendCom" onclick="" title="envoyer">Envoyer</button>-->
-          <button class="custom-btn2 btn-7"><span>Envoyer</span></button>
-      </div>
-  </section-commentaires>
-
-  <h4>Les meilleurs commentaires</h4>
-  <section-bestcom>
-      <div class="laissezcom">
-          <h5 class="pseudoavatar">Speculos62</h5>
-          <img class="avatar" src="Ressources/images2.png"/>
-          <p class="usercom">"Merci pour le post ! "Liker mon message svp !!"</p>
-      </div>
-
-      <div class="laissezcom">
-          <h5 class="pseudoavatar">HombredéMadrid</h5>
-          <img class="avatar" src="Ressources/images (1).jpeg"/>
-          <p class="usercom">"Yé soui tré content dé l'article !"</p>
-      </div>
-  </section-bestcom>
-</div>
-
-    <!--------------------------------Button Newsletter---------------------------------------------------->
-  <h2 class="titlenews">Inscrivez-vous à la NewsLetter !</h2>
-  <div class="sectionbutton">
-    <button id=btnPopup class="btnPopup custom-btn btn-5"><span>NewsLetter</span></button>
-      <!--<button id=btnPopup class="btnPopup">NewsLetter</button>-->
-  <div id="overlay" class="overlay">
-    <div id="popup" class="popup">
-      <h2 class ="titlepopup">
-        Recevez les dernières informations !
-         <span id="btnClose" class="btnClose">&times;</span>
-       </h2>
-       <div class="inputbutton">
-       <input
-            class="inputmail"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="exemple@gmail.com"
-          />
-        <button id="btnMail">Envoyer</button>
-      </div>
+        
+<div class="card">
+  <div class="card-img">
+      <img src="Ressources/laravel.webp" alt="photo laravel éléphant">
+  </div>
+  <div class="card-info">
+      <h1 class="card-title">Laravel 8</h1>
+      <p class="card-text">Laravel 8 est maintenant disponible et comprend de nombreuses nouvelles fonctionnalités, notamment Laravel Jetstream, un répertoire de modèles, des classes de fabrique de modèles, et bien d'autres.</p>
+      <div class="card-date">
+        <span>01/10/2021</span>
+        <span>Larry Dimmick</span>
     </div>
   </div>
 </div>
-
-    <script src="index.js"></script>
+<div class="card">
+<div class="card-img">
+    <img src="Ressources/phpstorm.png" alt="">
+</div>
+<div class="card-info">
+    <h1 class="card-title">PhpStorm</h1>
+    <p class="card-text">PhpStorm est un IDE innovant conçu par JetBrains pour les développeurs PHP et web. Il offre une complétion de code intelligente, une coloration syntaxique, une configuration étendue du formatage du code, le pliage du code et plus encore.</p>
+    <div class="card-date">
+      <span>05/09/2021</span>
+      <span>Freddy Newandyke</span>
+  </div>
+</div>
+</div>
+<div class="card">
+<div class="card-img">
+  <img src="Ressources/symfony.jpg" alt="">
+</div>
+<div class="card-info">
+  <h1 class="card-title">6 raisons d'utiliser Symfony</h1>
+  <p class="card-text">Lorsque l'on crée un site web, utiliser un framework est une bonne chose. Faire le bon choix est encore mieux. Voici six bonnes raisons d'utiliser Symfony d'un point de vue stratégique.</p>
+  <div class="card-date">
+    <span>04/09/2021</span>
+    <span>Vic Vega</span>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-img">
+<img src="Ressources/suffle.png" alt="">
+</div>
+<div class="card-info">
+<h1 class="card-title">Snuffleupagus, qu'est-ce que c'est ?</h1>
+<p class="card-text">Snuffleupagus est un module PHP7+ conçu pour augmenter de façon drastique le coût des attaques contre les sites web. Sans avoir à toucher au code, l'administrateur peut corriger des vulnérabilités spécifiques .</p>
+<div class="card-date">
+  <span>14/08/2021</span>
+  <span>Joe Cabot</span>
+</div>
+</div>
+</div>
+</main>
 
     <!-----------------------Footer-----------------------------------------------------------> 
+      
+
+
+    
   <footer id="footer-end">
     <div class="listfooter">
       <h3>Mentions légales</h3>
@@ -157,5 +146,6 @@
   </footer>
 
     <script src="index.js"></script>
+    <script src="burger.js"></script>
   </body>
 </html>

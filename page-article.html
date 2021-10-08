@@ -5,15 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <title>PageArticleHTML</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
   </head>
   <body>
-    <!-----------------------Header------------------------------------------------->
     <header>
       <img class ="logo-header" src="Ressources/logo bulb.png">
       <nav>
@@ -24,67 +21,73 @@
             <a  class="active-subnav" href="#">Techno</a>
 
             <ul class="subnav">
-              <li class="subnav-items-list"><a href="#">HTML/CSS</a></li>
-              <li class="subnav-items-list"><a href="tec.html">JS</a></li>
-              <li class="subnav-items-list"><a href="#">PHP</a></li>
-              <li class="subnav-items-list"><a href="#">Outils</a></li>
+              <li class="subnav-items-list"><a href="page-article-js.html">HTML/CSS</a></li>
+              <li class="subnav-items-list"><a href="page-article-js.html">JS</a></li>
+              <li class="subnav-items-list"><a href="page-article-php.html">PHP</a></li>
+              <li class="subnav-items-list"><a href="page-article-php.html">Outils</a></li>
             </ul>
 
           </li>
           
           <li class="nav-items-list"><a href="contact.html">Contact</a></li>
         </ul>
-        <div class="burger">
-          <span class="line"></span>
-        </div>
       </nav>
+      <div class="burger">
+        <img class="logo-menu-burger" src="./Ressources/hamburger-solid.svg" alt="">
+      </div>
     </header>
-<!----------------------------Section article---------------------------------------------->
+
+
     <section>
         <div id="all-article">
           <div class="titre-logo">
-            <img class="img-techno" src="Ressources/html.png" alt="logo html5">
-            <h2>Titre de l'article</h2>
+            <img class="img-techno" src="Ressources/php.png" alt="logo css3">
+            <h2 class="title-star">Laravel 8 !</h2>
           </div>
-          <!--Taille de l'image a changer pour la responsive-->
-        <img class="img-article" src="Ressources/image-article.jpg" alt="ordinateur">
+        <img class="img-article" src="Ressources/laravel8.png" alt="ordinateur">
             <div class="date-author">
-                <div class="article-date">Le 30/09/2021</div>
-                <div class="article-author">Billy LeChat</div>
+                <div class="article-date">Le 01/10/2021</div>
+                <div class="article-author">Larry Dimmick</div>
             </div>
-        <article class="text-article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit explicabo dolore esse voluptatibus laboriosam sed veniam qui voluptate. Accusantium dolores, impedit saepe nihil itaque harum ratione quis eligendi recusandae incidunt doloribus eum reiciendis molestiae cumque qui fuga repudiandae tempora sed voluptates pariatur minus! Nam ratione, consequatur facere dolore asperiores pariatur quam reprehenderit possimus quas error repellat veritatis aliquid illum voluptas voluptates, eligendi numquam accusantium nobis, minus officiis accusamus rem atque mollitia! Ut nemo optio ea voluptatum reiciendis laboriosam quidem vel modi dolor earum dolores, quaerat sed, architecto incidunt. Velit esse numquam obcaecati similique. Quis veritatis beatae delectus, sit voluptatum alias.</article>
+        <article class="text-article">Laravel 8 est maintenant publié et comprend de nombreuses nouvelles fonctionnalités, notamment Laravel Jetstream, un répertoire de modèles, des classes d'usine de modèles, un écrasement de la migration, des améliorations de limitation du débit, des assistants de test temporel, des composants de lame dynamiques et bien d'autres fonctionnalités. Avant de nous lancer dans les nouvelles fonctionnalités, nous aimerions souligner qu'à partir de la version 6, Laravel suit désormais semver et publiera une nouvelle version majeure tous les six mois. Vous pouvez voir <a class="link-article" href="https://laravel-news.com/laravel-releases" target="blank">comment fonctionne le processus de publication ici.</a><br>
+          Laravel Jetstream améliore l'échafaudage d'interface utilisateur Laravel existant dans les versions précédentes. Il fournit un point de départ pour de nouveaux projets, y compris la connexion, l'enregistrement, la vérification des e-mails, l'authentification à deux facteurs, la gestion de session, la prise en charge des API via Laravel et la gestion d'équipe.<br>
+
+          Le squelette d'application de Laravel 8 comprend un répertoire app/Models. Toutes les commandes de générateur supposent que des modèles existent dans app/Models ; Cependant, si ce répertoire n'existe pas, le framework supposera que l'application conserve les modèles dans le dossier app/.<br>
+          Si votre application contient de nombreux fichiers de migration, vous pouvez désormais les écraser dans un seul fichier SQL. Ce fichier sera exécuté en premier lors de l'exécution des migrations, suivi de tous les fichiers de migration restants qui ne font pas partie du fichier de schéma écrasé. L'écrasement des migrations existantes peut réduire le gonflement des fichiers de migration et éventuellement améliorer les performances lors de l'exécution des tests.<br>
+        </article>
         <div class="comment"></div>
         </div>
     </section>
 <!--------------------Section commentaires------------------------------------------------------>
-   <div id="comment-zone">
-    <h4>Laissez un commentaire</h4>
-    <section-commentaires>
-        <div class="laissezcom">
-            <h5 class="pseudoavatar">Clairedu31</h5>
-            <img class="avatar" src="Ressources/images.png"/>
-            <textarea class="textcom" id="commentaire" cols="50" rows="10" placeholder="   Ecrivez votre commentaire ici //"></textarea>
-            <!--<button class="envoiecom" id="sendCom" onclick="" title="envoyer">Envoyer</button>-->
-            <button class="custom-btn2 btn-7"><span>Envoyer</span></button>
-        </div>
-    </section-commentaires>
+<div id="comment-zone">
+  <h4>Laissez un commentaire</h4>
+  <section-commentaires>
+      <div class="laissezcom">
+          <h5 class="pseudoavatar">Clairedu31</h5>
+          <img class="avatar" src="Ressources/images.png"/>
+          <textarea class="textcom" id="commentaire" cols="50" rows="10" placeholder="   Ecrivez votre commentaire ici //"></textarea>
+          <!--<button class="envoiecom" id="sendCom" onclick="" title="envoyer">Envoyer</button>-->
+          <button class="custom-btn2 btn-7"><span>Envoyer</span></button>
+      </div>
+  </section-commentaires>
 
-    <h4>Les meilleurs commentaires</h4>
-    <section-bestcom>
-        <div class="laissezcom">
-            <h5 class="pseudoavatar">Speculos62</h5>
-            <img class="avatar" src="Ressources/images2.png"/>
-            <p class="usercom">"Merci pour le post ! "Liker mon message svp !!"</p>
-        </div>
+  <h4>Les meilleurs commentaires</h4>
+  <section-bestcom>
+      <div class="laissezcom">
+          <h5 class="pseudoavatar">Speculos62</h5>
+          <img class="avatar" src="Ressources/images2.png"/>
+          <p class="usercom">"Merci pour le post ! "Liker mon message svp !!"</p>
+      </div>
 
-        <div class="laissezcom">
-            <h5 class="pseudoavatar">HombredéMadrid</h5>
-            <img class="avatar" src="Ressources/images (1).jpeg"/>
-            <p class="usercom">"Yé soui tré content dé l'article !"</p>
-        </div>
-    </section-bestcom>
-  </div>
-  <!--------------------------------Button Newsletter---------------------------------------------------->
+      <div class="laissezcom">
+          <h5 class="pseudoavatar">HombredéMadrid</h5>
+          <img class="avatar" src="Ressources/images (1).jpeg"/>
+          <p class="usercom">"Yé soui tré content dé l'article !"</p>
+      </div>
+  </section-bestcom>
+</div>
+
+    <!--------------------------------Button Newsletter---------------------------------------------------->
   <h2 class="titlenews">Inscrivez-vous à la NewsLetter !</h2>
   <div class="sectionbutton">
     <button id=btnPopup class="btnPopup custom-btn btn-5"><span>NewsLetter</span></button>
@@ -110,47 +113,50 @@
 </div>
            
 
-   <!-----------------------Footer-----------------------------------------------------------> 
-  <footer id="footer-end">
-    <div class="listfooter">
-      <h3>Mentions légales</h3>
-      <ul class="footer-end-ul">
-        <li class ="middle-list"><a href="#">Cookies</a></li>
-        <li><a href="#">Partenaires</a></li>
-      </ul>
-    </div>
-    <div class="listfooter">
-      <h3>Publicité</h3>
-      <ul class="footer-end-ul">
-        <li class ="middle-list"><a href="#">A propos</a></li>
-        <li><a href="contact.html">Contactez-nous</a></li>
-      </ul>
-    </div>
-    <div class="listfooter">
-      <h3>Aide</h3>
-      <ul class="footer-end-ul">
-        <li class ="middle-list"><a href="#">NewsLetter</a></li>
-        <li><a href="#">On ne recrute pas</a></li>
-      </ul>
-    </div>
-      <div class="container_logo_linkedin">
-        <div class="top">
-          <span class="round_linkedin"><a href="https://www.linkedin.com/in/cyril-cabrolier/"target="_blank"><img class ="round_linkedin1" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
-        </div>
-        <div class="middle">
-          <span class="round_linkedin"><a href="https://www.linkedin.com/in/laurie-pujos-02b8a6135/"target="_blank"><img class ="round_linkedin2" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
-          <span class="round_linkedin"><a href="https://www.linkedin.com/in/claire-brunel-087879211/"target="_blank"><img class ="round_linkedin3" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
-        </div>
-        <div class="bottom">
-          <span class="round_linkedin"><a href="https://www.linkedin.com/in/yohann-mahrez-6083a1221/"target="_blank"><img class ="round_linkedin4" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
-          <span class="round_linkedin"><a href="https://www.linkedin.com/in/leo-planelles-ab57b81b8/"target="_blank"><img class ="round_linkedin5" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
-        </div>
-    </div>
-    <div class="titlefooter">
-      <img class="logo-footer" src="Ressources/logo bulb.png" />
-    </div>
-  </footer>
+    <!-----------------------Footer----------------------------------------------------------->
+    
 
-    <script src="index.js"></script>
-  </body>
+<footer id="footer-end">
+  <div class="listfooter">
+    <h3>Mentions légales</h3>
+    <ul class="footer-end-ul">
+      <li class ="middle-list"><a href="#">Cookies</a></li>
+      <li><a href="#">Partenaires</a></li>
+    </ul>
+  </div>
+  <div class="listfooter">
+    <h3>Publicité</h3>
+    <ul class="footer-end-ul">
+      <li class ="middle-list"><a href="#">A propos</a></li>
+      <li><a href="contact.html">Contactez-nous</a></li>
+    </ul>
+  </div>
+  <div class="listfooter">
+    <h3>Aide</h3>
+    <ul class="footer-end-ul">
+      <li class ="middle-list"><a href="#">NewsLetter</a></li>
+      <li><a href="#">On ne recrute pas</a></li>
+    </ul>
+  </div>
+    <div class="container_logo_linkedin">
+      <div class="top">
+        <span class="round_linkedin"><a href="https://www.linkedin.com/in/cyril-cabrolier/"target="_blank"><img class ="round_linkedin1" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
+      </div>
+      <div class="middle">
+        <span class="round_linkedin"><a href="https://www.linkedin.com/in/laurie-pujos-02b8a6135/"target="_blank"><img class ="round_linkedin2" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
+        <span class="round_linkedin"><a href="https://www.linkedin.com/in/claire-brunel-087879211/"target="_blank"><img class ="round_linkedin3" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
+      </div>
+      <div class="bottom">
+        <span class="round_linkedin"><a href="https://www.linkedin.com/in/yohann-mahrez-6083a1221/"target="_blank"><img class ="round_linkedin4" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
+        <span class="round_linkedin"><a href="https://www.linkedin.com/in/leo-planelles-ab57b81b8/"target="_blank"><img class ="round_linkedin5" src="Ressources/linkedin.jpg" alt="logo linkedin"></a></span>
+      </div>
+  </div>
+  <div class="titlefooter">
+    <img class="logo-footer" src="Ressources/logo bulb.png" />
+  </div>
+</footer>
+
+  <script src="index.js"></script>
+  <script src="burger.js"></script>
+</body>
 </html>
