@@ -20,14 +20,21 @@ function closePopup() {
 }
 
 function closeAlertPopup() {
-  overlay.style.display = "none";
-  alert("Merci !");
+  overlay.style.display = 'none';
+  alert('Merci ! Tu ne sera plus mou du BULB !');
+  
 }
 
 
-//---------------Button contact---------------//
-const message = "Merci pour votre retour ! ";
+//----------------Button envoyer ------------//
 
+const btnCom = document.querySelector('.btn-7');
+
+btnCom.addEventListener('click', maintenance);
+
+function maintenance(){
+  alert("Impossible d'envoyer un commentaire ! Vérifier votre connection internet !");
+};
 
 //---------------Button burger-------//
 
