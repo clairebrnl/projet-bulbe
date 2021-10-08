@@ -502,7 +502,6 @@ h1 {
 
 /*----------------HEADER STYLE----------------------*/
 /*----------------HERO STYLE----------------------*/
-
 .recherche {
   width: 100%;
   display: flex;
@@ -543,22 +542,20 @@ h1 {
   .content {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
-  .main-body img{
-    
-    max-width: 100%;
-    height: auto;
-    }
+  .main {
+    display: flex;
+  }
 
   .main-body {
-  flex-direction: column;
-  display: flex;
-  align-items: center;
     flex-direction: column;
   }
-  
+
+  img {
+    max-width: 300px;
+    max-height: 200px;
+  }
 
 
   .main-text {
@@ -621,14 +618,10 @@ align-items: center;
 
 .main-body {
   display: flex;
-  width: 100%;
 }
 
 .main-body img {
-  max-width: 100%;
-  height: auto;
-  min-height: 0;
-  min-width: 0;
+  width: 350px;
 }
 
 
@@ -661,7 +654,6 @@ align-items: center;
 
 .imgsidebarbody {
   width: 100%;
-  height: 100%;
 }
 
 .sidebar-text {
@@ -2253,7 +2245,7 @@ font-size: 22px;
   border: 1px solid;
   padding: 10px;
   letter-spacing: 2px;
-  background-color: lightslategrey;
+  background-color: whitesmoke;
   align-self: flex-end;
   margin-top: 20px;
   margin-right: 10%;
